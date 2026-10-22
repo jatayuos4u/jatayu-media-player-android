@@ -1,0 +1,895 @@
+package: name='io.github.jatayuos4u.jatayumediaplayer' versionCode='19' versionName='1.0' platformBuildVersionName='16' platformBuildVersionCode='36' compileSdkVersion='36' compileSdkVersionCodename='16'
+install-location:'auto'
+sdkVersion:'28'
+targetSdkVersion:'36'
+uses-permission: name='android.permission.READ_EXTERNAL_STORAGE' maxSdkVersion='32'
+uses-permission: name='android.permission.READ_MEDIA_VIDEO'
+uses-permission: name='android.permission.READ_MEDIA_AUDIO'
+uses-permission: name='android.permission.READ_MEDIA_VISUAL_USER_SELECTED'
+uses-permission: name='android.permission.FOREGROUND_SERVICE'
+uses-permission: name='android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK'
+uses-permission: name='android.permission.WAKE_LOCK'
+uses-permission: name='io.github.jatayuos4u.jatayumediaplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION'
+application-label:'Jatayu Media Player'
+application-icon-160:'res/2U.xml'
+application-icon-240:'res/2U.xml'
+application-icon-320:'res/2U.xml'
+application-icon-65534:'res/2U.xml'
+application: label='Jatayu Media Player' icon='res/2U.xml'
+launchable-activity: name='io.github.jatayuos4u.jatayumediaplayer.JatayuActivity'  label='' icon=''
+feature-group: label=''
+  uses-feature: name='android.hardware.touchscreen'
+  uses-feature-not-required: name='android.software.leanback'
+main
+other-receivers
+other-services
+supports-screens: 'small' 'normal' 'large' 'xlarge'
+supports-any-density: 'true'
+locales: '--_--'
+densities: '160' '240' '320' '65534'
+native-code: 'arm64-v8a'
+
+N: android=http://schemas.android.com/apk/res/android
+  E: manifest (line=2)
+    A: android:versionCode(0x0101021b)=(type 0x10)0x13
+    A: android:versionName(0x0101021c)="1.0" (Raw: "1.0")
+    A: android:installLocation(0x010102b7)=(type 0x10)0x0
+    A: android:compileSdkVersion(0x01010572)=(type 0x10)0x24
+    A: android:compileSdkVersionCodename(0x01010573)="16" (Raw: "16")
+    A: package="io.github.jatayuos4u.jatayumediaplayer" (Raw: "io.github.jatayuos4u.jatayumediaplayer")
+    A: platformBuildVersionCode=(type 0x10)0x24
+    A: platformBuildVersionName=(type 0x10)0x10
+    E: uses-sdk (line=8)
+      A: android:minSdkVersion(0x0101020c)=(type 0x10)0x1c
+      A: android:targetSdkVersion(0x01010270)=(type 0x10)0x24
+    E: uses-permission (line=12)
+      A: android:name(0x01010003)="android.permission.READ_EXTERNAL_STORAGE" (Raw: "android.permission.READ_EXTERNAL_STORAGE")
+      A: android:maxSdkVersion(0x01010271)=(type 0x10)0x20
+    E: uses-permission (line=15)
+      A: android:name(0x01010003)="android.permission.READ_MEDIA_VIDEO" (Raw: "android.permission.READ_MEDIA_VIDEO")
+    E: uses-permission (line=16)
+      A: android:name(0x01010003)="android.permission.READ_MEDIA_AUDIO" (Raw: "android.permission.READ_MEDIA_AUDIO")
+    E: uses-permission (line=17)
+      A: android:name(0x01010003)="android.permission.READ_MEDIA_VISUAL_USER_SELECTED" (Raw: "android.permission.READ_MEDIA_VISUAL_USER_SELECTED")
+    E: uses-permission (line=18)
+      A: android:name(0x01010003)="android.permission.FOREGROUND_SERVICE" (Raw: "android.permission.FOREGROUND_SERVICE")
+    E: uses-permission (line=19)
+      A: android:name(0x01010003)="android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK" (Raw: "android.permission.FOREGROUND_SERVICE_MEDIA_PLAYBACK")
+    E: uses-permission (line=20)
+      A: android:name(0x01010003)="android.permission.WAKE_LOCK" (Raw: "android.permission.WAKE_LOCK")
+    E: uses-feature (line=22)
+      A: android:name(0x01010003)="android.hardware.touchscreen" (Raw: "android.hardware.touchscreen")
+      A: android:required(0x0101028e)=(type 0x12)0xffffffff
+    E: uses-feature (line=25)
+      A: android:name(0x01010003)="android.software.leanback" (Raw: "android.software.leanback")
+      A: android:required(0x0101028e)=(type 0x12)0x0
+    E: supports-screens (line=29)
+      A: android:anyDensity(0x0101026c)=(type 0x12)0xffffffff
+      A: android:smallScreens(0x01010284)=(type 0x12)0xffffffff
+      A: android:normalScreens(0x01010285)=(type 0x12)0xffffffff
+      A: android:largeScreens(0x01010286)=(type 0x12)0xffffffff
+      A: android:xlargeScreens(0x010102bf)=(type 0x12)0xffffffff
+    E: permission (line=36)
+      A: android:name(0x01010003)="io.github.jatayuos4u.jatayumediaplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" (Raw: "io.github.jatayuos4u.jatayumediaplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION")
+      A: android:protectionLevel(0x01010009)=(type 0x11)0x2
+    E: uses-permission (line=40)
+      A: android:name(0x01010003)="io.github.jatayuos4u.jatayumediaplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" (Raw: "io.github.jatayuos4u.jatayumediaplayer.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION")
+    E: application (line=42)
+      A: android:label(0x01010001)="Jatayu Media Player" (Raw: "Jatayu Media Player")
+      A: android:icon(0x01010002)=@0x7f090000
+      A: android:name(0x01010003)="org.qtproject.qt.android.bindings.QtApplication" (Raw: "org.qtproject.qt.android.bindings.QtApplication")
+      A: android:allowBackup(0x01010280)=(type 0x12)0x0
+      A: android:hardwareAccelerated(0x010102d3)=(type 0x12)0xffffffff
+      A: android:fullBackupOnly(0x01010473)=(type 0x12)0x0
+      A: android:extractNativeLibs(0x010104ea)=(type 0x12)0x0
+      A: android:usesCleartextTraffic(0x010104ec)=(type 0x12)0x0
+      A: android:appComponentFactory(0x0101057a)="androidx.core.app.CoreComponentFactory" (Raw: "androidx.core.app.CoreComponentFactory")
+      A: android:dataExtractionRules(0x0101063e)=@0x7f0d0000
+      A: android:enableOnBackInvokedCallback(0x0101066c)=(type 0x12)0x0
+      E: activity (line=54)
+        A: android:name(0x01010003)="io.github.jatayuos4u.jatayumediaplayer.JatayuActivity" (Raw: "io.github.jatayuos4u.jatayumediaplayer.JatayuActivity")
+        A: android:exported(0x01010010)=(type 0x12)0xffffffff
+        A: android:launchMode(0x0101001d)=(type 0x10)0x1
+        A: android:screenOrientation(0x0101001e)=(type 0x10)0xffffffff
+        A: android:configChanges(0x0101001f)=(type 0x11)0x40003ff7
+        A: android:supportsPictureInPicture(0x010104f7)=(type 0x12)0xffffffff
+        E: meta-data (line=61)
+          A: android:name(0x01010003)="android.app.background_running" (Raw: "android.app.background_running")
+          A: android:value(0x01010024)=(type 0x12)0xffffffff
+        E: intent-filter (line=65)
+          E: action (line=66)
+            A: android:name(0x01010003)="android.intent.action.MAIN" (Raw: "android.intent.action.MAIN")
+          E: category (line=68)
+            A: android:name(0x01010003)="android.intent.category.LAUNCHER" (Raw: "android.intent.category.LAUNCHER")
+        E: meta-data (line=71)
+          A: android:name(0x01010003)="android.app.lib_name" (Raw: "android.app.lib_name")
+          A: android:value(0x01010024)="jatayu-media-player-android" (Raw: "jatayu-media-player-android")
+        E: meta-data (line=74)
+          A: android:name(0x01010003)="android.app.arguments" (Raw: "android.app.arguments")
+          A: android:value(0x01010024)="" (Raw: "")
+      E: service (line=79)
+        A: android:name(0x01010003)="io.github.jatayuos4u.jatayumediaplayer.JatayuPlaybackService" (Raw: "io.github.jatayuos4u.jatayumediaplayer.JatayuPlaybackService")
+        A: android:exported(0x01010010)=(type 0x12)0x0
+        A: android:stopWithTask(0x0101036a)=(type 0x12)0xffffffff
+        A: android:foregroundServiceType(0x01010599)=(type 0x11)0x2
+      E: provider (line=85)
+        A: android:name(0x01010003)="androidx.core.content.FileProvider" (Raw: "androidx.core.content.FileProvider")
+        A: android:exported(0x01010010)=(type 0x12)0x0
+        A: android:authorities(0x01010018)="io.github.jatayuos4u.jatayumediaplayer.qtprovider" (Raw: "io.github.jatayuos4u.jatayumediaplayer.qtprovider")
+        A: android:grantUriPermissions(0x0101001b)=(type 0x12)0xffffffff
+        E: meta-data (line=90)
+          A: android:name(0x01010003)="android.support.FILE_PROVIDER_PATHS" (Raw: "android.support.FILE_PROVIDER_PATHS")
+          A: android:resource(0x01010025)=@0x7f0d0001
+      E: provider (line=94)
+        A: android:name(0x01010003)="androidx.startup.InitializationProvider" (Raw: "androidx.startup.InitializationProvider")
+        A: android:exported(0x01010010)=(type 0x12)0x0
+        A: android:authorities(0x01010018)="io.github.jatayuos4u.jatayumediaplayer.androidx-startup" (Raw: "io.github.jatayuos4u.jatayumediaplayer.androidx-startup")
+        E: meta-data (line=98)
+          A: android:name(0x01010003)="androidx.profileinstaller.ProfileInstallerInitializer" (Raw: "androidx.profileinstaller.ProfileInstallerInitializer")
+          A: android:value(0x01010024)="androidx.startup" (Raw: "androidx.startup")
+      E: receiver (line=103)
+        A: android:name(0x01010003)="androidx.profileinstaller.ProfileInstallReceiver" (Raw: "androidx.profileinstaller.ProfileInstallReceiver")
+        A: android:permission(0x01010006)="android.permission.DUMP" (Raw: "android.permission.DUMP")
+        A: android:enabled(0x0101000e)=(type 0x12)0xffffffff
+        A: android:exported(0x01010010)=(type 0x12)0xffffffff
+        A: android:directBootAware(0x01010505)=(type 0x12)0x0
+        E: intent-filter (line=109)
+          E: action (line=110)
+            A: android:name(0x01010003)="androidx.profileinstaller.action.INSTALL_PROFILE" (Raw: "androidx.profileinstaller.action.INSTALL_PROFILE")
+        E: intent-filter (line=112)
+          E: action (line=113)
+            A: android:name(0x01010003)="androidx.profileinstaller.action.SKIP_FILE" (Raw: "androidx.profileinstaller.action.SKIP_FILE")
+        E: intent-filter (line=115)
+          E: action (line=116)
+            A: android:name(0x01010003)="androidx.profileinstaller.action.SAVE_PROFILE" (Raw: "androidx.profileinstaller.action.SAVE_PROFILE")
+        E: intent-filter (line=118)
+          E: action (line=119)
+            A: android:name(0x01010003)="androidx.profileinstaller.action.BENCHMARK_OPERATION" (Raw: "androidx.profileinstaller.action.BENCHMARK_OPERATION")
+
+Verifies
+Verified using v1 scheme (JAR signing): false
+Verified using v2 scheme (APK Signature Scheme v2): false
+Verified using v3 scheme (APK Signature Scheme v3): true
+Verified using v3.1 scheme (APK Signature Scheme v3.1): false
+Verified using v4 scheme (APK Signature Scheme v4): false
+Verified for SourceStamp: false
+Number of signers: 1
+
+Signer #1 certificate DN: CN=Anup Kumar Yadav, OU=Jatayu Media Player, O=JatayuOS, C=IN
+Signer #1 certificate SHA-256 digest: 62fa39e2bd37a94fe4386370b37c12664df3f0a035ca75c9f9951d9dac1fc2ac
+Signer #1 certificate SHA-1 digest: 7b556e7c2c3d6ccea39519d57f8eae58f49ef568
+Signer #1 certificate MD5 digest: 73db9fc391128c6e8e8929e37256172e
+
+Package Groups (1)
+Package Group 0 id=0x7f packageCount=1 name=io.github.jatayuos4u.jatayumediaplayer
+  Package 0 id=0x7f name=io.github.jatayuos4u.jatayumediaplayer
+    type 0 configCount=1 entryCount=3
+      spec resource 0x7f010000 io.github.jatayuos4u.jatayumediaplayer:array/bundled_libs: flags=0x00000000
+      spec resource 0x7f010001 io.github.jatayuos4u.jatayumediaplayer:array/load_local_libs: flags=0x00000000
+      spec resource 0x7f010002 io.github.jatayuos4u.jatayumediaplayer:array/qt_libs: flags=0x00000000
+      config (default):
+        resource 0x7f010000 io.github.jatayuos4u.jatayumediaplayer:array/bundled_libs: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=0
+        resource 0x7f010001 io.github.jatayuos4u.jatayumediaplayer:array/load_local_libs: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000001): (string8) "arm64-v8a;libplugins_platforms_qtforandroid_arm64-v8a.so:libplugins_multimedia_ffmpegmediaplugin_arm64-v8a.so:libplugins_multimedia_androidmediaplugin_arm64-v8a.so"
+        resource 0x7f010002 io.github.jatayuos4u.jatayumediaplayer:array/qt_libs: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=42
+          #0 (Key=0x01000001): (string8) "arm64-v8a;c++_shared"
+          #1 (Key=0x01000002): (string8) "arm64-v8a;Qt6Core_arm64-v8a"
+          #2 (Key=0x01000003): (string8) "arm64-v8a;Qt6Gui_arm64-v8a"
+          #3 (Key=0x01000004): (string8) "arm64-v8a;Qt6Concurrent_arm64-v8a"
+          #4 (Key=0x01000005): (string8) "arm64-v8a;Qt6Network_arm64-v8a"
+          #5 (Key=0x01000006): (string8) "arm64-v8a;Qt6Multimedia_arm64-v8a"
+          #6 (Key=0x01000007): (string8) "arm64-v8a;Qt6OpenGL_arm64-v8a"
+          #7 (Key=0x01000008): (string8) "arm64-v8a;Qt6Qml_arm64-v8a"
+          #8 (Key=0x01000009): (string8) "arm64-v8a;Qt6QmlModels_arm64-v8a"
+          #9 (Key=0x0100000a): (string8) "arm64-v8a;Qt6QmlWorkerScript_arm64-v8a"
+          #10 (Key=0x0100000b): (string8) "arm64-v8a;Qt6QmlMeta_arm64-v8a"
+          #11 (Key=0x0100000c): (string8) "arm64-v8a;Qt6Quick_arm64-v8a"
+          #12 (Key=0x0100000d): (string8) "arm64-v8a;Qt6QuickTemplates2_arm64-v8a"
+          #13 (Key=0x0100000e): (string8) "arm64-v8a;Qt6QuickControls2_arm64-v8a"
+          #14 (Key=0x0100000f): (string8) "arm64-v8a;Qt6QuickControls2Impl_arm64-v8a"
+          #15 (Key=0x01000010): (string8) "arm64-v8a;Qt6QuickDialogs2Utils_arm64-v8a"
+          #16 (Key=0x01000011): (string8) "arm64-v8a;Qt6QuickDialogs2QuickImpl_arm64-v8a"
+          #17 (Key=0x01000012): (string8) "arm64-v8a;Qt6QuickDialogs2_arm64-v8a"
+          #18 (Key=0x01000013): (string8) "arm64-v8a;Qt6Svg_arm64-v8a"
+          #19 (Key=0x01000014): (string8) "arm64-v8a;avutil"
+          #20 (Key=0x01000015): (string8) "arm64-v8a;swresample"
+          #21 (Key=0x01000016): (string8) "arm64-v8a;avcodec"
+          #22 (Key=0x01000017): (string8) "arm64-v8a;Qt6FFmpegStub-crypto_arm64-v8a"
+          #23 (Key=0x01000018): (string8) "arm64-v8a;Qt6FFmpegStub-ssl_arm64-v8a"
+          #24 (Key=0x01000019): (string8) "arm64-v8a;avformat"
+          #25 (Key=0x0100001a): (string8) "arm64-v8a;swscale"
+          #26 (Key=0x0100001b): (string8) "arm64-v8a;Qt6QuickControls2BasicStyleImpl_arm64-v8a"
+          #27 (Key=0x0100001c): (string8) "arm64-v8a;Qt6QuickControls2Basic_arm64-v8a"
+          #28 (Key=0x0100001d): (string8) "arm64-v8a;Qt6QuickControls2FusionStyleImpl_arm64-v8a"
+          #29 (Key=0x0100001e): (string8) "arm64-v8a;Qt6QuickControls2Fusion_arm64-v8a"
+          #30 (Key=0x0100001f): (string8) "arm64-v8a;Qt6QuickControls2ImagineStyleImpl_arm64-v8a"
+          #31 (Key=0x01000020): (string8) "arm64-v8a;Qt6QuickControls2Imagine_arm64-v8a"
+          #32 (Key=0x01000021): (string8) "arm64-v8a;Qt6QuickControls2MaterialStyleImpl_arm64-v8a"
+          #33 (Key=0x01000022): (string8) "arm64-v8a;Qt6QuickControls2Material_arm64-v8a"
+          #34 (Key=0x01000023): (string8) "arm64-v8a;Qt6QuickControls2UniversalStyleImpl_arm64-v8a"
+          #35 (Key=0x01000024): (string8) "arm64-v8a;Qt6QuickControls2Universal_arm64-v8a"
+          #36 (Key=0x01000025): (string8) "arm64-v8a;Qt6QuickControls2FluentWinUI3StyleImpl_arm64-v8a"
+          #37 (Key=0x01000026): (string8) "arm64-v8a;Qt6QuickEffects_arm64-v8a"
+          #38 (Key=0x01000027): (string8) "arm64-v8a;Qt6QuickLayouts_arm64-v8a"
+          #39 (Key=0x01000028): (string8) "arm64-v8a;Qt6QuickShapes_arm64-v8a"
+          #40 (Key=0x01000029): (string8) "arm64-v8a;Qt6LabsFolderListModel_arm64-v8a"
+          #41 (Key=0x0100002a): (string8) "arm64-v8a;Qt6MultimediaQuick_arm64-v8a"
+    type 1 configCount=1 entryCount=18
+      spec resource 0x7f020000 io.github.jatayuos4u.jatayumediaplayer:attr/alpha: flags=0x00000000
+      spec resource 0x7f020001 io.github.jatayuos4u.jatayumediaplayer:attr/font: flags=0x00000000
+      spec resource 0x7f020002 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderAuthority: flags=0x00000000
+      spec resource 0x7f020003 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderCerts: flags=0x00000000
+      spec resource 0x7f020004 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderFallbackQuery: flags=0x00000000
+      spec resource 0x7f020005 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderFetchStrategy: flags=0x00000000
+      spec resource 0x7f020006 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderFetchTimeout: flags=0x00000000
+      spec resource 0x7f020007 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderPackage: flags=0x00000000
+      spec resource 0x7f020008 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderQuery: flags=0x00000000
+      spec resource 0x7f020009 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderSystemFontFamily: flags=0x00000000
+      spec resource 0x7f02000a io.github.jatayuos4u.jatayumediaplayer:attr/fontStyle: flags=0x00000000
+      spec resource 0x7f02000b io.github.jatayuos4u.jatayumediaplayer:attr/fontVariationSettings: flags=0x00000000
+      spec resource 0x7f02000c io.github.jatayuos4u.jatayumediaplayer:attr/fontWeight: flags=0x00000000
+      spec resource 0x7f02000d io.github.jatayuos4u.jatayumediaplayer:attr/lStar: flags=0x00000000
+      spec resource 0x7f02000e io.github.jatayuos4u.jatayumediaplayer:attr/nestedScrollViewStyle: flags=0x00000000
+      spec resource 0x7f02000f io.github.jatayuos4u.jatayumediaplayer:attr/queryPatterns: flags=0x00000000
+      spec resource 0x7f020010 io.github.jatayuos4u.jatayumediaplayer:attr/shortcutMatchRequired: flags=0x00000000
+      spec resource 0x7f020011 io.github.jatayuos4u.jatayumediaplayer:attr/ttcIndex: flags=0x00000000
+      config (default):
+        resource 0x7f020000 io.github.jatayuos4u.jatayumediaplayer:attr/alpha: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000020 or 32
+        resource 0x7f020001 io.github.jatayuos4u.jatayumediaplayer:attr/font: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000001 or 1
+        resource 0x7f020002 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderAuthority: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000002 or 2
+        resource 0x7f020003 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderCerts: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000001 or 1
+        resource 0x7f020004 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderFallbackQuery: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000002 or 2
+        resource 0x7f020005 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderFetchStrategy: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=3
+          #0 (Key=0x01000000): (int) 0x00010000 or 65536
+          #1 (Key=0x7f060027): (int) 0x00000000 or 0
+          #2 (Key=0x7f060026): (int) 0x00000001 or 1
+        resource 0x7f020006 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderFetchTimeout: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=2
+          #0 (Key=0x01000000): (int) 0x00010004 or 65540
+          #1 (Key=0x7f06002b): (int) 0xffffffff or -1
+        resource 0x7f020007 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderPackage: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000002 or 2
+        resource 0x7f020008 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderQuery: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000002 or 2
+        resource 0x7f020009 io.github.jatayuos4u.jatayumediaplayer:attr/fontProviderSystemFontFamily: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000002 or 2
+        resource 0x7f02000a io.github.jatayuos4u.jatayumediaplayer:attr/fontStyle: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=3
+          #0 (Key=0x01000000): (int) 0x00010000 or 65536
+          #1 (Key=0x7f060033): (int) 0x00000000 or 0
+          #2 (Key=0x7f060030): (int) 0x00000001 or 1
+        resource 0x7f02000b io.github.jatayuos4u.jatayumediaplayer:attr/fontVariationSettings: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000002 or 2
+        resource 0x7f02000c io.github.jatayuos4u.jatayumediaplayer:attr/fontWeight: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000004 or 4
+        resource 0x7f02000d io.github.jatayuos4u.jatayumediaplayer:attr/lStar: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000020 or 32
+        resource 0x7f02000e io.github.jatayuos4u.jatayumediaplayer:attr/nestedScrollViewStyle: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000001 or 1
+        resource 0x7f02000f io.github.jatayuos4u.jatayumediaplayer:attr/queryPatterns: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000001 or 1
+        resource 0x7f020010 io.github.jatayuos4u.jatayumediaplayer:attr/shortcutMatchRequired: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000008 or 8
+        resource 0x7f020011 io.github.jatayuos4u.jatayumediaplayer:attr/ttcIndex: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x01000000): (int) 0x00000004 or 4
+    type 2 configCount=1 entryCount=6
+      spec resource 0x7f030000 io.github.jatayuos4u.jatayumediaplayer:color/androidx_core_ripple_material_light: flags=0x00000000
+      spec resource 0x7f030001 io.github.jatayuos4u.jatayumediaplayer:color/androidx_core_secondary_text_default_material_light: flags=0x00000000
+      spec resource 0x7f030002 io.github.jatayuos4u.jatayumediaplayer:color/call_notification_answer_color: flags=0x00000000
+      spec resource 0x7f030003 io.github.jatayuos4u.jatayumediaplayer:color/call_notification_decline_color: flags=0x00000000
+      spec resource 0x7f030004 io.github.jatayuos4u.jatayumediaplayer:color/notification_action_color_filter: flags=0x00000000
+      spec resource 0x7f030005 io.github.jatayuos4u.jatayumediaplayer:color/notification_icon_bg_color: flags=0x00000000
+      config (default):
+        resource 0x7f030000 io.github.jatayuos4u.jatayumediaplayer:color/androidx_core_ripple_material_light: t=0x1c d=0x1f000000 (s=0x0008 r=0x00)
+          (color) #1f000000
+        resource 0x7f030001 io.github.jatayuos4u.jatayumediaplayer:color/androidx_core_secondary_text_default_material_light: t=0x1c d=0x8a000000 (s=0x0008 r=0x00)
+          (color) #8a000000
+        resource 0x7f030002 io.github.jatayuos4u.jatayumediaplayer:color/call_notification_answer_color: t=0x1d d=0xff1d873b (s=0x0008 r=0x00)
+          (color) #ff1d873b
+        resource 0x7f030003 io.github.jatayuos4u.jatayumediaplayer:color/call_notification_decline_color: t=0x1d d=0xffd93025 (s=0x0008 r=0x00)
+          (color) #ffd93025
+        resource 0x7f030004 io.github.jatayuos4u.jatayumediaplayer:color/notification_action_color_filter: t=0x01 d=0x7f030001 (s=0x0008 r=0x00)
+          (reference) 0x7f030001
+        resource 0x7f030005 io.github.jatayuos4u.jatayumediaplayer:color/notification_icon_bg_color: t=0x1c d=0xff9e9e9e (s=0x0008 r=0x00)
+          (color) #ff9e9e9e
+    type 3 configCount=1 entryCount=22
+      spec resource 0x7f040000 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_button_inset_horizontal_material: flags=0x00000000
+      spec resource 0x7f040001 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_button_inset_vertical_material: flags=0x00000000
+      spec resource 0x7f040002 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_button_padding_horizontal_material: flags=0x00000000
+      spec resource 0x7f040003 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_button_padding_vertical_material: flags=0x00000000
+      spec resource 0x7f040004 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_control_corner_material: flags=0x00000000
+      spec resource 0x7f040005 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_notification_large_icon_max_height: flags=0x00000000
+      spec resource 0x7f040006 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_notification_large_icon_max_width: flags=0x00000000
+      spec resource 0x7f040007 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_action_icon_size: flags=0x00000000
+      spec resource 0x7f040008 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_action_text_size: flags=0x00000000
+      spec resource 0x7f040009 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_big_circle_margin: flags=0x00000000
+      spec resource 0x7f04000a io.github.jatayuos4u.jatayumediaplayer:dimen/notification_content_margin_start: flags=0x00000000
+      spec resource 0x7f04000b io.github.jatayuos4u.jatayumediaplayer:dimen/notification_large_icon_height: flags=0x00000000
+      spec resource 0x7f04000c io.github.jatayuos4u.jatayumediaplayer:dimen/notification_large_icon_width: flags=0x00000000
+      spec resource 0x7f04000d io.github.jatayuos4u.jatayumediaplayer:dimen/notification_main_column_padding_top: flags=0x00000000
+      spec resource 0x7f04000e io.github.jatayuos4u.jatayumediaplayer:dimen/notification_media_narrow_margin: flags=0x00000000
+      spec resource 0x7f04000f io.github.jatayuos4u.jatayumediaplayer:dimen/notification_right_icon_size: flags=0x00000000
+      spec resource 0x7f040010 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_right_side_padding_top: flags=0x00000000
+      spec resource 0x7f040011 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_small_icon_background_padding: flags=0x00000000
+      spec resource 0x7f040012 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_small_icon_size_as_large: flags=0x00000000
+      spec resource 0x7f040013 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_subtext_size: flags=0x00000000
+      spec resource 0x7f040014 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_top_pad: flags=0x00000000
+      spec resource 0x7f040015 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_top_pad_large_text: flags=0x00000000
+      config (default):
+        resource 0x7f040000 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_button_inset_horizontal_material: t=0x05 d=0x00000401 (s=0x0008 r=0x00)
+          (dimension) 4.000000dp
+        resource 0x7f040001 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_button_inset_vertical_material: t=0x05 d=0x00000601 (s=0x0008 r=0x00)
+          (dimension) 6.000000dp
+        resource 0x7f040002 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_button_padding_horizontal_material: t=0x05 d=0x00000801 (s=0x0008 r=0x00)
+          (dimension) 8.000000dp
+        resource 0x7f040003 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_button_padding_vertical_material: t=0x05 d=0x00000401 (s=0x0008 r=0x00)
+          (dimension) 4.000000dp
+        resource 0x7f040004 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_control_corner_material: t=0x05 d=0x00000201 (s=0x0008 r=0x00)
+          (dimension) 2.000000dp
+        resource 0x7f040005 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_notification_large_icon_max_height: t=0x05 d=0x00014001 (s=0x0008 r=0x00)
+          (dimension) 320.000000dp
+        resource 0x7f040006 io.github.jatayuos4u.jatayumediaplayer:dimen/compat_notification_large_icon_max_width: t=0x05 d=0x00014001 (s=0x0008 r=0x00)
+          (dimension) 320.000000dp
+        resource 0x7f040007 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_action_icon_size: t=0x05 d=0x00002001 (s=0x0008 r=0x00)
+          (dimension) 32.000000dp
+        resource 0x7f040008 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_action_text_size: t=0x05 d=0x00000d02 (s=0x0008 r=0x00)
+          (dimension) 13.000000sp
+        resource 0x7f040009 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_big_circle_margin: t=0x05 d=0x00000c01 (s=0x0008 r=0x00)
+          (dimension) 12.000000dp
+        resource 0x7f04000a io.github.jatayuos4u.jatayumediaplayer:dimen/notification_content_margin_start: t=0x05 d=0x00000001 (s=0x0008 r=0x00)
+          (dimension) 0.000000dp
+        resource 0x7f04000b io.github.jatayuos4u.jatayumediaplayer:dimen/notification_large_icon_height: t=0x05 d=0x00004001 (s=0x0008 r=0x00)
+          (dimension) 64.000000dp
+        resource 0x7f04000c io.github.jatayuos4u.jatayumediaplayer:dimen/notification_large_icon_width: t=0x05 d=0x00004001 (s=0x0008 r=0x00)
+          (dimension) 64.000000dp
+        resource 0x7f04000d io.github.jatayuos4u.jatayumediaplayer:dimen/notification_main_column_padding_top: t=0x05 d=0x00000001 (s=0x0008 r=0x00)
+          (dimension) 0.000000dp
+        resource 0x7f04000e io.github.jatayuos4u.jatayumediaplayer:dimen/notification_media_narrow_margin: t=0x05 d=0x00000c01 (s=0x0008 r=0x00)
+          (dimension) 12.000000dp
+        resource 0x7f04000f io.github.jatayuos4u.jatayumediaplayer:dimen/notification_right_icon_size: t=0x05 d=0x00001001 (s=0x0008 r=0x00)
+          (dimension) 16.000000dp
+        resource 0x7f040010 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_right_side_padding_top: t=0x05 d=0x00000401 (s=0x0008 r=0x00)
+          (dimension) 4.000000dp
+        resource 0x7f040011 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_small_icon_background_padding: t=0x05 d=0x00000301 (s=0x0008 r=0x00)
+          (dimension) 3.000000dp
+        resource 0x7f040012 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_small_icon_size_as_large: t=0x05 d=0x00001801 (s=0x0008 r=0x00)
+          (dimension) 24.000000dp
+        resource 0x7f040013 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_subtext_size: t=0x05 d=0x00000d02 (s=0x0008 r=0x00)
+          (dimension) 13.000000sp
+        resource 0x7f040014 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_top_pad: t=0x05 d=0x00000a01 (s=0x0008 r=0x00)
+          (dimension) 10.000000dp
+        resource 0x7f040015 io.github.jatayuos4u.jatayumediaplayer:dimen/notification_top_pad_large_text: t=0x05 d=0x00000501 (s=0x0008 r=0x00)
+          (dimension) 5.000000dp
+    type 4 configCount=4 entryCount=30
+      spec resource 0x7f050000 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher__0: flags=0x00000000
+      spec resource 0x7f050001 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher__1: flags=0x00000000
+      spec resource 0x7f050002 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher__2: flags=0x00000000
+      spec resource 0x7f050003 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher__3: flags=0x00000000
+      spec resource 0x7f050004 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher_foreground__0: flags=0x00000000
+      spec resource 0x7f050005 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher_foreground__1: flags=0x00000000
+      spec resource 0x7f050006 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher_foreground__2: flags=0x00000000
+      spec resource 0x7f050007 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher_foreground__3: flags=0x00000000
+      spec resource 0x7f050008 io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_answer: flags=0x00000000
+      spec resource 0x7f050009 io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_answer_low: flags=0x00000000
+      spec resource 0x7f05000a io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_answer_video: flags=0x00000000
+      spec resource 0x7f05000b io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_answer_video_low: flags=0x00000000
+      spec resource 0x7f05000c io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_decline: flags=0x00000000
+      spec resource 0x7f05000d io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_decline_low: flags=0x00000000
+      spec resource 0x7f05000e io.github.jatayuos4u.jatayumediaplayer:drawable/ic_media_notification: flags=0x00000000
+      spec resource 0x7f05000f io.github.jatayuos4u.jatayumediaplayer:drawable/jatayu_launcher: flags=0x00000000
+      spec resource 0x7f050010 io.github.jatayuos4u.jatayumediaplayer:drawable/jatayu_launcher_foreground: flags=0x00000000
+      spec resource 0x7f050011 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_action_background: flags=0x00000000
+      spec resource 0x7f050012 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg: flags=0x00000000
+      spec resource 0x7f050013 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_low: flags=0x00000000
+      spec resource 0x7f050014 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_low_normal: flags=0x00000100
+      spec resource 0x7f050015 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_low_pressed: flags=0x00000100
+      spec resource 0x7f050016 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_normal: flags=0x00000100
+      spec resource 0x7f050017 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_normal_pressed: flags=0x00000100
+      spec resource 0x7f050018 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_icon_background: flags=0x00000000
+      spec resource 0x7f050019 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_oversize_large_icon_bg: flags=0x00000000
+      spec resource 0x7f05001a io.github.jatayuos4u.jatayumediaplayer:drawable/notification_template_icon_bg: flags=0x00000000
+      spec resource 0x7f05001b io.github.jatayuos4u.jatayumediaplayer:drawable/notification_template_icon_low_bg: flags=0x00000000
+      spec resource 0x7f05001c io.github.jatayuos4u.jatayumediaplayer:drawable/notification_tile_bg: flags=0x00000000
+      spec resource 0x7f05001d io.github.jatayuos4u.jatayumediaplayer:drawable/notify_panel_notification_icon_bg: flags=0x00000100
+      config (default):
+        resource 0x7f050000 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher__0: t=0x03 d=0x0000001c (s=0x0008 r=0x00)
+          (string8) "res/sx.xml"
+        resource 0x7f050001 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher__1: t=0x03 d=0x00000020 (s=0x0008 r=0x00)
+          (string8) "res/xQ.xml"
+        resource 0x7f050002 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher__2: t=0x03 d=0x00000002 (s=0x0008 r=0x00)
+          (string8) "res/5v.xml"
+        resource 0x7f050003 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher__3: t=0x03 d=0x00000012 (s=0x0008 r=0x00)
+          (string8) "res/b-.xml"
+        resource 0x7f050004 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher_foreground__0: t=0x03 d=0x0000000f (s=0x0008 r=0x00)
+          (string8) "res/_o.xml"
+        resource 0x7f050005 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher_foreground__1: t=0x03 d=0x00000008 (s=0x0008 r=0x00)
+          (string8) "res/E4.xml"
+        resource 0x7f050006 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher_foreground__2: t=0x03 d=0x00000003 (s=0x0008 r=0x00)
+          (string8) "res/88.xml"
+        resource 0x7f050007 io.github.jatayuos4u.jatayumediaplayer:drawable/$jatayu_launcher_foreground__3: t=0x03 d=0x0000000a (s=0x0008 r=0x00)
+          (string8) "res/OL.xml"
+        resource 0x7f050008 io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_answer: t=0x03 d=0x00000013 (s=0x0008 r=0x00)
+          (string8) "res/bX.xml"
+        resource 0x7f050009 io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_answer_low: t=0x03 d=0x00000005 (s=0x0008 r=0x00)
+          (string8) "res/Ce.xml"
+        resource 0x7f05000a io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_answer_video: t=0x03 d=0x0000000c (s=0x0008 r=0x00)
+          (string8) "res/WU.xml"
+        resource 0x7f05000b io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_answer_video_low: t=0x03 d=0x00000009 (s=0x0008 r=0x00)
+          (string8) "res/N3.xml"
+        resource 0x7f05000c io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_decline: t=0x03 d=0x0000001e (s=0x0008 r=0x00)
+          (string8) "res/x4.xml"
+        resource 0x7f05000d io.github.jatayuos4u.jatayumediaplayer:drawable/ic_call_decline_low: t=0x03 d=0x0000000e (s=0x0008 r=0x00)
+          (string8) "res/Xk.xml"
+        resource 0x7f05000e io.github.jatayuos4u.jatayumediaplayer:drawable/ic_media_notification: t=0x03 d=0x00000006 (s=0x0008 r=0x00)
+          (string8) "res/Dc.xml"
+        resource 0x7f05000f io.github.jatayuos4u.jatayumediaplayer:drawable/jatayu_launcher: t=0x03 d=0x0000001b (s=0x0008 r=0x00)
+          (string8) "res/o4.xml"
+        resource 0x7f050010 io.github.jatayuos4u.jatayumediaplayer:drawable/jatayu_launcher_foreground: t=0x03 d=0x0000001d (s=0x0008 r=0x00)
+          (string8) "res/x0.xml"
+        resource 0x7f050011 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_action_background: t=0x03 d=0x0000000d (s=0x0008 r=0x00)
+          (string8) "res/Ws.xml"
+        resource 0x7f050012 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg: t=0x03 d=0x0000001a (s=0x0008 r=0x00)
+          (string8) "res/nz.xml"
+        resource 0x7f050013 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_low: t=0x03 d=0x00000017 (s=0x0008 r=0x00)
+          (string8) "res/df.xml"
+        resource 0x7f050018 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_icon_background: t=0x03 d=0x00000014 (s=0x0008 r=0x00)
+          (string8) "res/c6.xml"
+        resource 0x7f05001a io.github.jatayuos4u.jatayumediaplayer:drawable/notification_template_icon_bg: t=0x1c d=0x3333b5e5 (s=0x0008 r=0x00)
+          (color) #3333b5e5
+        resource 0x7f05001b io.github.jatayuos4u.jatayumediaplayer:drawable/notification_template_icon_low_bg: t=0x1c d=0x0cffffff (s=0x0008 r=0x00)
+          (color) #0cffffff
+        resource 0x7f05001c io.github.jatayuos4u.jatayumediaplayer:drawable/notification_tile_bg: t=0x03 d=0x00000004 (s=0x0008 r=0x00)
+          (string8) "res/9m.xml"
+      config mdpi:
+        resource 0x7f050014 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_low_normal: t=0x03 d=0x00000023 (s=0x0008 r=0x00)
+          (string8) "res/gK.9.png"
+        resource 0x7f050015 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_low_pressed: t=0x03 d=0x00000022 (s=0x0008 r=0x00)
+          (string8) "res/U-.9.png"
+        resource 0x7f050016 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_normal: t=0x03 d=0x00000021 (s=0x0008 r=0x00)
+          (string8) "res/C_.9.png"
+        resource 0x7f050017 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_normal_pressed: t=0x03 d=0x00000025 (s=0x0008 r=0x00)
+          (string8) "res/vL.9.png"
+        resource 0x7f05001d io.github.jatayuos4u.jatayumediaplayer:drawable/notify_panel_notification_icon_bg: t=0x03 d=0x00000024 (s=0x0008 r=0x00)
+          (string8) "res/s4.png"
+      config hdpi:
+        resource 0x7f050014 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_low_normal: t=0x03 d=0x00000027 (s=0x0008 r=0x00)
+          (string8) "res/je.9.png"
+        resource 0x7f050015 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_low_pressed: t=0x03 d=0x00000026 (s=0x0008 r=0x00)
+          (string8) "res/2K.9.png"
+        resource 0x7f050016 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_normal: t=0x03 d=0x0000002a (s=0x0008 r=0x00)
+          (string8) "res/sA.9.png"
+        resource 0x7f050017 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_normal_pressed: t=0x03 d=0x0000002b (s=0x0008 r=0x00)
+          (string8) "res/wN.9.png"
+        resource 0x7f050019 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_oversize_large_icon_bg: t=0x03 d=0x00000029 (s=0x0008 r=0x00)
+          (string8) "res/pu.png"
+        resource 0x7f05001d io.github.jatayuos4u.jatayumediaplayer:drawable/notify_panel_notification_icon_bg: t=0x03 d=0x00000028 (s=0x0008 r=0x00)
+          (string8) "res/pY.png"
+      config xhdpi:
+        resource 0x7f050014 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_low_normal: t=0x03 d=0x0000002f (s=0x0008 r=0x00)
+          (string8) "res/xa.9.png"
+        resource 0x7f050015 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_low_pressed: t=0x03 d=0x0000002e (s=0x0008 r=0x00)
+          (string8) "res/o_.9.png"
+        resource 0x7f050016 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_normal: t=0x03 d=0x00000030 (s=0x0008 r=0x00)
+          (string8) "res/z-.9.png"
+        resource 0x7f050017 io.github.jatayuos4u.jatayumediaplayer:drawable/notification_bg_normal_pressed: t=0x03 d=0x0000002d (s=0x0008 r=0x00)
+          (string8) "res/Ma.9.png"
+        resource 0x7f05001d io.github.jatayuos4u.jatayumediaplayer:drawable/notify_panel_notification_icon_bg: t=0x03 d=0x0000002c (s=0x0008 r=0x00)
+          (string8) "res/5c.png"
+    type 5 configCount=1 entryCount=78
+      spec resource 0x7f060000 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_action_clickable_span: flags=0x00000000
+      spec resource 0x7f060001 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_0: flags=0x00000000
+      spec resource 0x7f060002 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_1: flags=0x00000000
+      spec resource 0x7f060003 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_10: flags=0x00000000
+      spec resource 0x7f060004 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_11: flags=0x00000000
+      spec resource 0x7f060005 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_12: flags=0x00000000
+      spec resource 0x7f060006 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_13: flags=0x00000000
+      spec resource 0x7f060007 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_14: flags=0x00000000
+      spec resource 0x7f060008 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_15: flags=0x00000000
+      spec resource 0x7f060009 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_16: flags=0x00000000
+      spec resource 0x7f06000a io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_17: flags=0x00000000
+      spec resource 0x7f06000b io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_18: flags=0x00000000
+      spec resource 0x7f06000c io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_19: flags=0x00000000
+      spec resource 0x7f06000d io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_2: flags=0x00000000
+      spec resource 0x7f06000e io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_20: flags=0x00000000
+      spec resource 0x7f06000f io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_21: flags=0x00000000
+      spec resource 0x7f060010 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_22: flags=0x00000000
+      spec resource 0x7f060011 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_23: flags=0x00000000
+      spec resource 0x7f060012 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_24: flags=0x00000000
+      spec resource 0x7f060013 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_25: flags=0x00000000
+      spec resource 0x7f060014 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_26: flags=0x00000000
+      spec resource 0x7f060015 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_27: flags=0x00000000
+      spec resource 0x7f060016 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_28: flags=0x00000000
+      spec resource 0x7f060017 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_29: flags=0x00000000
+      spec resource 0x7f060018 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_3: flags=0x00000000
+      spec resource 0x7f060019 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_30: flags=0x00000000
+      spec resource 0x7f06001a io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_31: flags=0x00000000
+      spec resource 0x7f06001b io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_4: flags=0x00000000
+      spec resource 0x7f06001c io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_5: flags=0x00000000
+      spec resource 0x7f06001d io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_6: flags=0x00000000
+      spec resource 0x7f06001e io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_7: flags=0x00000000
+      spec resource 0x7f06001f io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_8: flags=0x00000000
+      spec resource 0x7f060020 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_9: flags=0x00000000
+      spec resource 0x7f060021 io.github.jatayuos4u.jatayumediaplayer:id/action_container: flags=0x00000000
+      spec resource 0x7f060022 io.github.jatayuos4u.jatayumediaplayer:id/action_divider: flags=0x00000000
+      spec resource 0x7f060023 io.github.jatayuos4u.jatayumediaplayer:id/action_image: flags=0x00000000
+      spec resource 0x7f060024 io.github.jatayuos4u.jatayumediaplayer:id/action_text: flags=0x00000000
+      spec resource 0x7f060025 io.github.jatayuos4u.jatayumediaplayer:id/actions: flags=0x00000000
+      spec resource 0x7f060026 io.github.jatayuos4u.jatayumediaplayer:id/async: flags=0x00000000
+      spec resource 0x7f060027 io.github.jatayuos4u.jatayumediaplayer:id/blocking: flags=0x00000000
+      spec resource 0x7f060028 io.github.jatayuos4u.jatayumediaplayer:id/chronometer: flags=0x00000000
+      spec resource 0x7f060029 io.github.jatayuos4u.jatayumediaplayer:id/dialog_button: flags=0x00000000
+      spec resource 0x7f06002a io.github.jatayuos4u.jatayumediaplayer:id/edit_text_id: flags=0x00000000
+      spec resource 0x7f06002b io.github.jatayuos4u.jatayumediaplayer:id/forever: flags=0x00000000
+      spec resource 0x7f06002c io.github.jatayuos4u.jatayumediaplayer:id/hide_ime_id: flags=0x00000000
+      spec resource 0x7f06002d io.github.jatayuos4u.jatayumediaplayer:id/icon: flags=0x00000000
+      spec resource 0x7f06002e io.github.jatayuos4u.jatayumediaplayer:id/icon_group: flags=0x00000000
+      spec resource 0x7f06002f io.github.jatayuos4u.jatayumediaplayer:id/info: flags=0x00000000
+      spec resource 0x7f060030 io.github.jatayuos4u.jatayumediaplayer:id/italic: flags=0x00000000
+      spec resource 0x7f060031 io.github.jatayuos4u.jatayumediaplayer:id/line1: flags=0x00000000
+      spec resource 0x7f060032 io.github.jatayuos4u.jatayumediaplayer:id/line3: flags=0x00000000
+      spec resource 0x7f060033 io.github.jatayuos4u.jatayumediaplayer:id/normal: flags=0x00000000
+      spec resource 0x7f060034 io.github.jatayuos4u.jatayumediaplayer:id/notification_background: flags=0x00000000
+      spec resource 0x7f060035 io.github.jatayuos4u.jatayumediaplayer:id/notification_main_column: flags=0x00000000
+      spec resource 0x7f060036 io.github.jatayuos4u.jatayumediaplayer:id/notification_main_column_container: flags=0x00000000
+      spec resource 0x7f060037 io.github.jatayuos4u.jatayumediaplayer:id/right_icon: flags=0x00000000
+      spec resource 0x7f060038 io.github.jatayuos4u.jatayumediaplayer:id/right_side: flags=0x00000000
+      spec resource 0x7f060039 io.github.jatayuos4u.jatayumediaplayer:id/tag_accessibility_actions: flags=0x00000000
+      spec resource 0x7f06003a io.github.jatayuos4u.jatayumediaplayer:id/tag_accessibility_clickable_spans: flags=0x00000000
+      spec resource 0x7f06003b io.github.jatayuos4u.jatayumediaplayer:id/tag_accessibility_heading: flags=0x00000000
+      spec resource 0x7f06003c io.github.jatayuos4u.jatayumediaplayer:id/tag_accessibility_pane_title: flags=0x00000000
+      spec resource 0x7f06003d io.github.jatayuos4u.jatayumediaplayer:id/tag_compat_insets_dispatch: flags=0x00000000
+      spec resource 0x7f06003e io.github.jatayuos4u.jatayumediaplayer:id/tag_on_apply_window_listener: flags=0x00000000
+      spec resource 0x7f06003f io.github.jatayuos4u.jatayumediaplayer:id/tag_on_receive_content_listener: flags=0x00000000
+      spec resource 0x7f060040 io.github.jatayuos4u.jatayumediaplayer:id/tag_on_receive_content_mime_types: flags=0x00000000
+      spec resource 0x7f060041 io.github.jatayuos4u.jatayumediaplayer:id/tag_screen_reader_focusable: flags=0x00000000
+      spec resource 0x7f060042 io.github.jatayuos4u.jatayumediaplayer:id/tag_state_description: flags=0x00000000
+      spec resource 0x7f060043 io.github.jatayuos4u.jatayumediaplayer:id/tag_system_bar_state_monitor: flags=0x00000000
+      spec resource 0x7f060044 io.github.jatayuos4u.jatayumediaplayer:id/tag_transition_group: flags=0x00000000
+      spec resource 0x7f060045 io.github.jatayuos4u.jatayumediaplayer:id/tag_unhandled_key_event_manager: flags=0x00000000
+      spec resource 0x7f060046 io.github.jatayuos4u.jatayumediaplayer:id/tag_unhandled_key_listeners: flags=0x00000000
+      spec resource 0x7f060047 io.github.jatayuos4u.jatayumediaplayer:id/tag_window_insets_animation_callback: flags=0x00000000
+      spec resource 0x7f060048 io.github.jatayuos4u.jatayumediaplayer:id/text: flags=0x00000000
+      spec resource 0x7f060049 io.github.jatayuos4u.jatayumediaplayer:id/text2: flags=0x00000000
+      spec resource 0x7f06004a io.github.jatayuos4u.jatayumediaplayer:id/time: flags=0x00000000
+      spec resource 0x7f06004b io.github.jatayuos4u.jatayumediaplayer:id/title: flags=0x00000000
+      spec resource 0x7f06004c io.github.jatayuos4u.jatayumediaplayer:id/view_tree_disjoint_parent: flags=0x00000000
+      spec resource 0x7f06004d io.github.jatayuos4u.jatayumediaplayer:id/view_tree_lifecycle_owner: flags=0x00000000
+      config (default):
+        resource 0x7f060000 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_action_clickable_span: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060001 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_0: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060002 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_1: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060003 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_10: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060004 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_11: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060005 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_12: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060006 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_13: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060007 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_14: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060008 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_15: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060009 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_16: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06000a io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_17: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06000b io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_18: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06000c io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_19: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06000d io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_2: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06000e io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_20: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06000f io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_21: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060010 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_22: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060011 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_23: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060012 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_24: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060013 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_25: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060014 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_26: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060015 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_27: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060016 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_28: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060017 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_29: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060018 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_3: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060019 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_30: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06001a io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_31: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06001b io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_4: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06001c io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_5: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06001d io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_6: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06001e io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_7: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06001f io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_8: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060020 io.github.jatayuos4u.jatayumediaplayer:id/accessibility_custom_action_9: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060021 io.github.jatayuos4u.jatayumediaplayer:id/action_container: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060022 io.github.jatayuos4u.jatayumediaplayer:id/action_divider: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060023 io.github.jatayuos4u.jatayumediaplayer:id/action_image: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060024 io.github.jatayuos4u.jatayumediaplayer:id/action_text: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060025 io.github.jatayuos4u.jatayumediaplayer:id/actions: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060026 io.github.jatayuos4u.jatayumediaplayer:id/async: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060027 io.github.jatayuos4u.jatayumediaplayer:id/blocking: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060028 io.github.jatayuos4u.jatayumediaplayer:id/chronometer: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060029 io.github.jatayuos4u.jatayumediaplayer:id/dialog_button: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06002a io.github.jatayuos4u.jatayumediaplayer:id/edit_text_id: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06002b io.github.jatayuos4u.jatayumediaplayer:id/forever: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06002c io.github.jatayuos4u.jatayumediaplayer:id/hide_ime_id: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06002d io.github.jatayuos4u.jatayumediaplayer:id/icon: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06002e io.github.jatayuos4u.jatayumediaplayer:id/icon_group: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06002f io.github.jatayuos4u.jatayumediaplayer:id/info: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060030 io.github.jatayuos4u.jatayumediaplayer:id/italic: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060031 io.github.jatayuos4u.jatayumediaplayer:id/line1: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060032 io.github.jatayuos4u.jatayumediaplayer:id/line3: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060033 io.github.jatayuos4u.jatayumediaplayer:id/normal: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060034 io.github.jatayuos4u.jatayumediaplayer:id/notification_background: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060035 io.github.jatayuos4u.jatayumediaplayer:id/notification_main_column: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060036 io.github.jatayuos4u.jatayumediaplayer:id/notification_main_column_container: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060037 io.github.jatayuos4u.jatayumediaplayer:id/right_icon: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060038 io.github.jatayuos4u.jatayumediaplayer:id/right_side: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060039 io.github.jatayuos4u.jatayumediaplayer:id/tag_accessibility_actions: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06003a io.github.jatayuos4u.jatayumediaplayer:id/tag_accessibility_clickable_spans: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06003b io.github.jatayuos4u.jatayumediaplayer:id/tag_accessibility_heading: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06003c io.github.jatayuos4u.jatayumediaplayer:id/tag_accessibility_pane_title: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06003d io.github.jatayuos4u.jatayumediaplayer:id/tag_compat_insets_dispatch: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06003e io.github.jatayuos4u.jatayumediaplayer:id/tag_on_apply_window_listener: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06003f io.github.jatayuos4u.jatayumediaplayer:id/tag_on_receive_content_listener: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060040 io.github.jatayuos4u.jatayumediaplayer:id/tag_on_receive_content_mime_types: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060041 io.github.jatayuos4u.jatayumediaplayer:id/tag_screen_reader_focusable: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060042 io.github.jatayuos4u.jatayumediaplayer:id/tag_state_description: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060043 io.github.jatayuos4u.jatayumediaplayer:id/tag_system_bar_state_monitor: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060044 io.github.jatayuos4u.jatayumediaplayer:id/tag_transition_group: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060045 io.github.jatayuos4u.jatayumediaplayer:id/tag_unhandled_key_event_manager: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060046 io.github.jatayuos4u.jatayumediaplayer:id/tag_unhandled_key_listeners: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060047 io.github.jatayuos4u.jatayumediaplayer:id/tag_window_insets_animation_callback: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060048 io.github.jatayuos4u.jatayumediaplayer:id/text: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f060049 io.github.jatayuos4u.jatayumediaplayer:id/text2: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06004a io.github.jatayuos4u.jatayumediaplayer:id/time: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06004b io.github.jatayuos4u.jatayumediaplayer:id/title: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06004c io.github.jatayuos4u.jatayumediaplayer:id/view_tree_disjoint_parent: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+        resource 0x7f06004d io.github.jatayuos4u.jatayumediaplayer:id/view_tree_lifecycle_owner: t=0x12 d=0x00000000 (s=0x0008 r=0x00)
+          (boolean) false
+    type 6 configCount=1 entryCount=1
+      spec resource 0x7f070000 io.github.jatayuos4u.jatayumediaplayer:integer/status_bar_notification_info_maxnum: flags=0x00000000
+      config (default):
+        resource 0x7f070000 io.github.jatayuos4u.jatayumediaplayer:integer/status_bar_notification_info_maxnum: t=0x10 d=0x000003e7 (s=0x0008 r=0x00)
+          (int) 0x000003e7 or 999
+    type 7 configCount=1 entryCount=9
+      spec resource 0x7f080000 io.github.jatayuos4u.jatayumediaplayer:layout/custom_dialog: flags=0x00000000
+      spec resource 0x7f080001 io.github.jatayuos4u.jatayumediaplayer:layout/ime_base_split_test_activity: flags=0x00000000
+      spec resource 0x7f080002 io.github.jatayuos4u.jatayumediaplayer:layout/ime_secondary_split_test_activity: flags=0x00000000
+      spec resource 0x7f080003 io.github.jatayuos4u.jatayumediaplayer:layout/notification_action: flags=0x00000000
+      spec resource 0x7f080004 io.github.jatayuos4u.jatayumediaplayer:layout/notification_action_tombstone: flags=0x00000000
+      spec resource 0x7f080005 io.github.jatayuos4u.jatayumediaplayer:layout/notification_template_custom_big: flags=0x00000000
+      spec resource 0x7f080006 io.github.jatayuos4u.jatayumediaplayer:layout/notification_template_icon_group: flags=0x00000000
+      spec resource 0x7f080007 io.github.jatayuos4u.jatayumediaplayer:layout/notification_template_part_chronometer: flags=0x00000000
+      spec resource 0x7f080008 io.github.jatayuos4u.jatayumediaplayer:layout/notification_template_part_time: flags=0x00000000
+      config (default):
+        resource 0x7f080000 io.github.jatayuos4u.jatayumediaplayer:layout/custom_dialog: t=0x03 d=0x00000010 (s=0x0008 r=0x00)
+          (string8) "res/_y.xml"
+        resource 0x7f080001 io.github.jatayuos4u.jatayumediaplayer:layout/ime_base_split_test_activity: t=0x03 d=0x00000016 (s=0x0008 r=0x00)
+          (string8) "res/cr.xml"
+        resource 0x7f080002 io.github.jatayuos4u.jatayumediaplayer:layout/ime_secondary_split_test_activity: t=0x03 d=0x00000001 (s=0x0008 r=0x00)
+          (string8) "res/4z.xml"
+        resource 0x7f080003 io.github.jatayuos4u.jatayumediaplayer:layout/notification_action: t=0x03 d=0x0000000b (s=0x0008 r=0x00)
+          (string8) "res/S8.xml"
+        resource 0x7f080004 io.github.jatayuos4u.jatayumediaplayer:layout/notification_action_tombstone: t=0x03 d=0x00000011 (s=0x0008 r=0x00)
+          (string8) "res/a0.xml"
+        resource 0x7f080005 io.github.jatayuos4u.jatayumediaplayer:layout/notification_template_custom_big: t=0x03 d=0x0000001f (s=0x0008 r=0x00)
+          (string8) "res/xN.xml"
+        resource 0x7f080006 io.github.jatayuos4u.jatayumediaplayer:layout/notification_template_icon_group: t=0x03 d=0x00000018 (s=0x0008 r=0x00)
+          (string8) "res/iQ.xml"
+        resource 0x7f080007 io.github.jatayuos4u.jatayumediaplayer:layout/notification_template_part_chronometer: t=0x03 d=0x00000019 (s=0x0008 r=0x00)
+          (string8) "res/lR.xml"
+        resource 0x7f080008 io.github.jatayuos4u.jatayumediaplayer:layout/notification_template_part_time: t=0x03 d=0x00000015 (s=0x0008 r=0x00)
+          (string8) "res/cV.xml"
+    type 8 configCount=1 entryCount=1
+      spec resource 0x7f090000 io.github.jatayuos4u.jatayumediaplayer:mipmap/jatayu_launcher: flags=0x00000000
+      config anydpi:
+        resource 0x7f090000 io.github.jatayuos4u.jatayumediaplayer:mipmap/jatayu_launcher: t=0x03 d=0x00000031 (s=0x0008 r=0x00)
+          (string8) "res/2U.xml"
+    type 9 configCount=1 entryCount=13
+      spec resource 0x7f0a0000 io.github.jatayuos4u.jatayumediaplayer:string/androidx_startup: flags=0x00000000
+      spec resource 0x7f0a0001 io.github.jatayuos4u.jatayumediaplayer:string/bundle_local_qt_libs: flags=0x00000000
+      spec resource 0x7f0a0002 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_answer_action: flags=0x00000000
+      spec resource 0x7f0a0003 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_answer_video_action: flags=0x00000000
+      spec resource 0x7f0a0004 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_decline_action: flags=0x00000000
+      spec resource 0x7f0a0005 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_hang_up_action: flags=0x00000000
+      spec resource 0x7f0a0006 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_incoming_text: flags=0x00000000
+      spec resource 0x7f0a0007 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_ongoing_text: flags=0x00000000
+      spec resource 0x7f0a0008 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_screening_text: flags=0x00000000
+      spec resource 0x7f0a0009 io.github.jatayuos4u.jatayumediaplayer:string/fatal_error_msg: flags=0x00000000
+      spec resource 0x7f0a000a io.github.jatayuos4u.jatayumediaplayer:string/status_bar_notification_info_overflow: flags=0x00000000
+      spec resource 0x7f0a000b io.github.jatayuos4u.jatayumediaplayer:string/system_libs_prefix: flags=0x00000000
+      spec resource 0x7f0a000c io.github.jatayuos4u.jatayumediaplayer:string/use_local_qt_libs: flags=0x00000000
+      config (default):
+        resource 0x7f0a0000 io.github.jatayuos4u.jatayumediaplayer:string/androidx_startup: t=0x03 d=0x0000003d (s=0x0008 r=0x00)
+          (string8) "androidx.startup"
+        resource 0x7f0a0001 io.github.jatayuos4u.jatayumediaplayer:string/bundle_local_qt_libs: t=0x03 d=0x00000033 (s=0x0008 r=0x00)
+          (string8) "1"
+        resource 0x7f0a0002 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_answer_action: t=0x03 d=0x00000035 (s=0x0008 r=0x00)
+          (string8) "Answer"
+        resource 0x7f0a0003 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_answer_video_action: t=0x03 d=0x0000003b (s=0x0008 r=0x00)
+          (string8) "Video"
+        resource 0x7f0a0004 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_decline_action: t=0x03 d=0x00000036 (s=0x0008 r=0x00)
+          (string8) "Decline"
+        resource 0x7f0a0005 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_hang_up_action: t=0x03 d=0x00000037 (s=0x0008 r=0x00)
+          (string8) "Hang Up"
+        resource 0x7f0a0006 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_incoming_text: t=0x03 d=0x00000038 (s=0x0008 r=0x00)
+          (string8) "Incoming call"
+        resource 0x7f0a0007 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_ongoing_text: t=0x03 d=0x00000039 (s=0x0008 r=0x00)
+          (string8) "Ongoing call"
+        resource 0x7f0a0008 io.github.jatayuos4u.jatayumediaplayer:string/call_notification_screening_text: t=0x03 d=0x0000003a (s=0x0008 r=0x00)
+          (string8) "Screening an incoming call"
+        resource 0x7f0a0009 io.github.jatayuos4u.jatayumediaplayer:string/fatal_error_msg: t=0x03 d=0x0000003c (s=0x0008 r=0x00)
+          (string8) "Your application encountered a fatal error and cannot continue."
+        resource 0x7f0a000a io.github.jatayuos4u.jatayumediaplayer:string/status_bar_notification_info_overflow: t=0x03 d=0x00000034 (s=0x0008 r=0x00)
+          (string8) "999+"
+        resource 0x7f0a000b io.github.jatayuos4u.jatayumediaplayer:string/system_libs_prefix: t=0x03 d=0x00000032 (s=0x0008 r=0x00)
+          (string8) ""
+        resource 0x7f0a000c io.github.jatayuos4u.jatayumediaplayer:string/use_local_qt_libs: t=0x03 d=0x00000033 (s=0x0008 r=0x00)
+          (string8) "1"
+    type 10 configCount=1 entryCount=7
+      spec resource 0x7f0b0000 io.github.jatayuos4u.jatayumediaplayer:style/TextAppearance.Compat.Notification: flags=0x00000000
+      spec resource 0x7f0b0001 io.github.jatayuos4u.jatayumediaplayer:style/TextAppearance.Compat.Notification.Info: flags=0x00000000
+      spec resource 0x7f0b0002 io.github.jatayuos4u.jatayumediaplayer:style/TextAppearance.Compat.Notification.Line2: flags=0x00000000
+      spec resource 0x7f0b0003 io.github.jatayuos4u.jatayumediaplayer:style/TextAppearance.Compat.Notification.Time: flags=0x00000000
+      spec resource 0x7f0b0004 io.github.jatayuos4u.jatayumediaplayer:style/TextAppearance.Compat.Notification.Title: flags=0x00000000
+      spec resource 0x7f0b0005 io.github.jatayuos4u.jatayumediaplayer:style/Widget.Compat.NotificationActionContainer: flags=0x00000000
+      spec resource 0x7f0b0006 io.github.jatayuos4u.jatayumediaplayer:style/Widget.Compat.NotificationActionText: flags=0x00000000
+      config (default):
+        resource 0x7f0b0000 io.github.jatayuos4u.jatayumediaplayer:style/TextAppearance.Compat.Notification: <bag>
+          Parent=0x010301fe(Resolved=0x010301fe), Count=0
+        resource 0x7f0b0001 io.github.jatayuos4u.jatayumediaplayer:style/TextAppearance.Compat.Notification.Info: <bag>
+          Parent=0x01030200(Resolved=0x01030200), Count=0
+        resource 0x7f0b0002 io.github.jatayuos4u.jatayumediaplayer:style/TextAppearance.Compat.Notification.Line2: <bag>
+          Parent=0x7f0b0001(Resolved=0x7f0b0001), Count=0
+        resource 0x7f0b0003 io.github.jatayuos4u.jatayumediaplayer:style/TextAppearance.Compat.Notification.Time: <bag>
+          Parent=0x01030202(Resolved=0x01030202), Count=0
+        resource 0x7f0b0004 io.github.jatayuos4u.jatayumediaplayer:style/TextAppearance.Compat.Notification.Title: <bag>
+          Parent=0x01030203(Resolved=0x01030203), Count=0
+        resource 0x7f0b0005 io.github.jatayuos4u.jatayumediaplayer:style/Widget.Compat.NotificationActionContainer: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=1
+          #0 (Key=0x010100d4): (reference) 0x7f050011
+        resource 0x7f0b0006 io.github.jatayuos4u.jatayumediaplayer:style/Widget.Compat.NotificationActionText: <bag>
+          Parent=0x00000000(Resolved=0x00000000), Count=3
+          #0 (Key=0x01010034): (attribute) 0x01010207
+          #1 (Key=0x01010095): (reference) 0x7f040008
+          #2 (Key=0x01010098): (reference) 0x7f030001
+    type 12 configCount=1 entryCount=2
+      spec resource 0x7f0d0000 io.github.jatayuos4u.jatayumediaplayer:xml/data_extraction_rules: flags=0x00000000
+      spec resource 0x7f0d0001 io.github.jatayuos4u.jatayumediaplayer:xml/qtprovider_paths: flags=0x00000000
+      config (default):
+        resource 0x7f0d0000 io.github.jatayuos4u.jatayumediaplayer:xml/data_extraction_rules: t=0x03 d=0x00000000 (s=0x0008 r=0x00)
+          (string8) "res/4j.xml"
+        resource 0x7f0d0001 io.github.jatayuos4u.jatayumediaplayer:xml/qtprovider_paths: t=0x03 d=0x00000007 (s=0x0008 r=0x00)
+          (string8) "res/Dt.xml"
+
+E: data-extraction-rules (line=2)
+  E: cloud-backup (line=3)
+    E: exclude (line=4)
+      A: domain="root" (Raw: "root")
+      A: path="." (Raw: ".")
+    E: exclude (line=5)
+      A: domain="file" (Raw: "file")
+      A: path="." (Raw: ".")
+    E: exclude (line=6)
+      A: domain="database" (Raw: "database")
+      A: path="." (Raw: ".")
+    E: exclude (line=7)
+      A: domain="sharedpref" (Raw: "sharedpref")
+      A: path="." (Raw: ".")
+    E: exclude (line=8)
+      A: domain="external" (Raw: "external")
+      A: path="." (Raw: ".")
+  E: device-transfer (line=10)
+    E: exclude (line=11)
+      A: domain="root" (Raw: "root")
+      A: path="." (Raw: ".")
+    E: exclude (line=12)
+      A: domain="file" (Raw: "file")
+      A: path="." (Raw: ".")
+    E: exclude (line=13)
+      A: domain="database" (Raw: "database")
+      A: path="." (Raw: ".")
+    E: exclude (line=14)
+      A: domain="sharedpref" (Raw: "sharedpref")
+      A: path="." (Raw: ".")
+    E: exclude (line=15)
+      A: domain="external" (Raw: "external")
+      A: path="." (Raw: ".")
+
+
+Checked 93 AArch64 ELF libraries; ZIP CRCs passed
+
+All ELF LOAD segments and uncompressed native ZIP entries meet 16 KB alignment; device compatibility is not established by alignment alone
+SHA256 93de30f90aa8c9a4117c6f9852d7295a0a27aabdfe6d224d8f23b69481d5a084
+PASS: package, launcher, ARM64 payload, manifest, signature and ZIP alignment
+NOT TESTED: installation, rendering, picker access, codecs and playback on devices
+93de30f90aa8c9a4117c6f9852d7295a0a27aabdfe6d224d8f23b69481d5a084  BUILD_ROOT/release-artifacts/Jatayu-Media-Player-Android-1.0.apk

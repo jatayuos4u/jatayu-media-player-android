@@ -1,0 +1,467 @@
+[
+  {
+    "path": "lib/arm64-v8a/libQt6Concurrent_arm64-v8a.so",
+    "sha256": "4ac2c9a03d6aa057701d66247817f9d757fa8183538796e02432946cd39dd9e1",
+    "bytes": 42840
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6Core_arm64-v8a.so",
+    "sha256": "652beb09da6ee2ef978d0fd098cb66e032e0c602e212f40eee7b2fddd9f1fc2e",
+    "bytes": 6370040
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6FFmpegStub-crypto_arm64-v8a.so",
+    "sha256": "73562ab31e03f279a78dd694471cbfba42f81180c5c59f47cf606dd199d80b91",
+    "bytes": 3776
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6FFmpegStub-ssl_arm64-v8a.so",
+    "sha256": "cdd6207ea59a99f2cf104fa3329441ce71a9ba37a68576f36a402618916012ba",
+    "bytes": 47960
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6Gui_arm64-v8a.so",
+    "sha256": "d002516c70753d75b70fc512c9b4aaf8e6720b432bc6d3f4fddc9dfed82d7329",
+    "bytes": 8123952
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6LabsFolderListModel_arm64-v8a.so",
+    "sha256": "f6620b8777daa9e8da4ab9c2db999c5510a02e3c91bec3d99c91812e0a527600",
+    "bytes": 112264
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6MultimediaQuick_arm64-v8a.so",
+    "sha256": "7a3c56f2554cd87afd75351e37eff5909d91b3a75bbd08b1b47a1c926819e435",
+    "bytes": 405528
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6Multimedia_arm64-v8a.so",
+    "sha256": "77abdb96baeec01f77c5103479900d5b45bf76e8712a4ffb1b788a417da0259a",
+    "bytes": 1423488
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6Network_arm64-v8a.so",
+    "sha256": "b1190b325ed8f0d7c861777fa214327cd5ce0a114ded3f5966ab163e418b6a6c",
+    "bytes": 1854344
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6OpenGL_arm64-v8a.so",
+    "sha256": "ae72623c1609ebb0287256154de2aaa442989e69f9e4e4ef241928813568ff7b",
+    "bytes": 518024
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QmlMeta_arm64-v8a.so",
+    "sha256": "bb462fa79cb54891a284c92af3465c1a91f1eac457bbeeb690fa98fc350ef0c2",
+    "bytes": 175272
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QmlModels_arm64-v8a.so",
+    "sha256": "f52d14719c1aff367b2cd8df4936ae28bcb3d7dfeeda0dea91e5f5e0a62fca82",
+    "bytes": 1136800
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QmlWorkerScript_arm64-v8a.so",
+    "sha256": "e5a6cdf535ceccdef4774d70212e5dfc7a2b68d6a2bd8bd9eb977974e7473bf2",
+    "bytes": 82072
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6Qml_arm64-v8a.so",
+    "sha256": "eaade9f00ff6ec955ee8da327a353097e17b30987d215d11e2e762491aa49af5",
+    "bytes": 5737000
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2BasicStyleImpl_arm64-v8a.so",
+    "sha256": "f652ba9cf87302edbc5a3716f8d1b6ab1edf70b08d117a12bccd4da671c340ec",
+    "bytes": 86888
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2Basic_arm64-v8a.so",
+    "sha256": "983789387671c330ad1d7b959eb78484c1eae3d5e47a9fc95f242c65c5c70b9c",
+    "bytes": 1804232
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2FluentWinUI3StyleImpl_arm64-v8a.so",
+    "sha256": "9bc6b0024fa1a4d9610b03c1b54baf3c66932907104a22cde59f481e0f435c4c",
+    "bytes": 216280
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2FusionStyleImpl_arm64-v8a.so",
+    "sha256": "771cdcec45160b76b4bbf01db330b28e2b565cddfbc0162acb821caed7a2d45f",
+    "bytes": 186368
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2Fusion_arm64-v8a.so",
+    "sha256": "b4c9969bbc65412dad55e1384ea38ed94e340c5fe8e7db08a1537c319a8c65eb",
+    "bytes": 1519792
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2ImagineStyleImpl_arm64-v8a.so",
+    "sha256": "debc51cd1ae0cfe5c0aa2702e8f78df550e9bf0947cee73fb53057f64e158fdd",
+    "bytes": 53960
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2Imagine_arm64-v8a.so",
+    "sha256": "568a7fbbd9c518c40a3d7f0e6c6a8057bd25ef2bafc3d0b4a927896267b64b56",
+    "bytes": 2912664
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2Impl_arm64-v8a.so",
+    "sha256": "2c22a71c128b06a72605ad3e778042a3eaedf2465190bfac50c6123d20b013d8",
+    "bytes": 392416
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2MaterialStyleImpl_arm64-v8a.so",
+    "sha256": "7bd33191f274474d49dd420b448f2cdf0095812ea9c54aae3f0cc0be69b106a0",
+    "bytes": 331936
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2Material_arm64-v8a.so",
+    "sha256": "f0fdd4c7c61640d05f082ce3a2321704938edb6966ff277644a9c6900446a021",
+    "bytes": 1960584
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2UniversalStyleImpl_arm64-v8a.so",
+    "sha256": "a3398f0176ed10d3f5a7310c21cb1e657117c20968a37c029e88cfef3524753b",
+    "bytes": 138624
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2Universal_arm64-v8a.so",
+    "sha256": "85db286ec7596b461f9f0c8e36087156e2c8fafd68d23e867c25433b58489671",
+    "bytes": 1589440
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickControls2_arm64-v8a.so",
+    "sha256": "2bbcf8fccef536e6f9aad6bc3a4c87db01ccdb6251f0ef7ebd7a045590bd51bd",
+    "bytes": 94080
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickDialogs2QuickImpl_arm64-v8a.so",
+    "sha256": "016a4c29f4c37c621dc2d4876dde92010a411afa76b9a61ebe230a3e05621061",
+    "bytes": 2933240
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickDialogs2Utils_arm64-v8a.so",
+    "sha256": "e9d788e72db61bd876a8a926dfe75aa333a3e7d60bf871047a4144b234a7d4b2",
+    "bytes": 28688
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickDialogs2_arm64-v8a.so",
+    "sha256": "5cf90dcb77283b1034fe281091a22263be23326521168887be5800be7493a6fe",
+    "bytes": 181304
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickEffects_arm64-v8a.so",
+    "sha256": "76947cac7e371e7195b5f9483600e613b103c628a376a5be8c5e0f0703e0e75f",
+    "bytes": 351688
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickLayouts_arm64-v8a.so",
+    "sha256": "c2c305aae95d832d4bba28aacdd2337c84b759fe573dc7b132dc8d2a75af4dae",
+    "bytes": 350800
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickShapes_arm64-v8a.so",
+    "sha256": "aa315d33f4d40adf0bf035856fbc44ff7e08e46963a40e2b5fe554b881fcb5ea",
+    "bytes": 375928
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6QuickTemplates2_arm64-v8a.so",
+    "sha256": "8e32f7474df200f1c72af89254fccb2c75b0c0b362195ea57abcc1c3bbaa5dad",
+    "bytes": 2688664
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6Quick_arm64-v8a.so",
+    "sha256": "5d0f2db6236bdcb617de26fc5211712bc482ea4b48b299d098763bb4e7c6e713",
+    "bytes": 7449064
+  },
+  {
+    "path": "lib/arm64-v8a/libQt6Svg_arm64-v8a.so",
+    "sha256": "46d83c4686c042da649d61614f6fee66dc3fa4ca33301f94f2c83385bb6aefa8",
+    "bytes": 607976
+  },
+  {
+    "path": "lib/arm64-v8a/libavcodec.so",
+    "sha256": "b22309371246031ef5530ca69d9999e522d6fe0f9ae0d6e0f065089bc51bdc5f",
+    "bytes": 12418504
+  },
+  {
+    "path": "lib/arm64-v8a/libavformat.so",
+    "sha256": "049c7319d4b088944754d2d64258490afb07c195d47057adb22ad09bc595fcf1",
+    "bytes": 2635776
+  },
+  {
+    "path": "lib/arm64-v8a/libavutil.so",
+    "sha256": "33ca2165f6baf621de67bd7fecdc510bf16a2ee9969dc4d133950d54a8b85514",
+    "bytes": 662728
+  },
+  {
+    "path": "lib/arm64-v8a/libc++_shared.so",
+    "sha256": "4397241b4bd20a8e579bfb41d21107857e12985f6a01ca0c2a5f83380d1270b4",
+    "bytes": 1292904
+  },
+  {
+    "path": "lib/arm64-v8a/libjatayu-media-player-android_arm64-v8a.so",
+    "sha256": "56cb18f48f38630f96ea298c699e9ed9f1aa8be13953d3b01ee2b6c482d48903",
+    "bytes": 1835080
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_iconengines_qsvgicon_arm64-v8a.so",
+    "sha256": "dcb8d8610b34c7e395303a8b3bd5d316a07f9fb092878a72b73f6214adef1d50",
+    "bytes": 52648
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_imageformats_qgif_arm64-v8a.so",
+    "sha256": "333b79da9690a2febce7e886afff3e70d7d9810747ae46d593f7fed59de8e2b4",
+    "bytes": 30096
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_imageformats_qico_arm64-v8a.so",
+    "sha256": "3fa76c37bbb237f3b3e8f9e81544defc1dcf398eea812f0275a33e5b9274e4d0",
+    "bytes": 32240
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_imageformats_qjpeg_arm64-v8a.so",
+    "sha256": "b44e901ac4aa16e532926793e8d3c48d85de4d720fed32ec41a7d587dda75a65",
+    "bytes": 378240
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_imageformats_qsvg_arm64-v8a.so",
+    "sha256": "4bd78b0663f20c04c28fe67cb9b0981afea333938b965eb86330bbf30d05676d",
+    "bytes": 23784
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_multimedia_androidmediaplugin_arm64-v8a.so",
+    "sha256": "5374c0405319cfc8083ad08a205846fd4bd2c1f0a766a8e4295bee8477c8799a",
+    "bytes": 546896
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_multimedia_ffmpegmediaplugin_arm64-v8a.so",
+    "sha256": "801caef394828b2acdc539d46f6328b5e4c8cbad5194d71cb4d2e5db1458da9b",
+    "bytes": 744872
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_networkinformation_qandroidnetworkinformation_arm64-v8a.so",
+    "sha256": "d64e102d067069a24b120cff499bd2ffe82f9e0952bdc72f97a65c49e9157771",
+    "bytes": 37808
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_platforms_qoffscreen_arm64-v8a.so",
+    "sha256": "cd601e3e612012cd4bb028e69d7efd6c2a381244867db103d92f5f8b204a40b7",
+    "bytes": 101568
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_platforms_qtforandroid_arm64-v8a.so",
+    "sha256": "520cee5a3bdb7f3112b765853ef138ed8de6eb2ee6434ac38a28885733d4f9d6",
+    "bytes": 733552
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_debugger_arm64-v8a.so",
+    "sha256": "0072ea121f7ff2cf79b8b7672cd04de41abd842de1e3d4dd29ca9b51202136e7",
+    "bytes": 224368
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_inspector_arm64-v8a.so",
+    "sha256": "c563e64c9507b81fc89bd1c169a9af5a6e36e85f5a9d2c015dc1a0d730eb3d80",
+    "bytes": 114800
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_local_arm64-v8a.so",
+    "sha256": "bc4d8bba527b168018638cd9b2033454ac733148f58c8f486c9c5ebbbd1348d1",
+    "bytes": 22416
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_messages_arm64-v8a.so",
+    "sha256": "d56b84726447ccb0c5123e1a075baad9880d4b783a0076ba04c4b1d9d0635e7e",
+    "bytes": 21320
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_native_arm64-v8a.so",
+    "sha256": "4b3e1e0bf7318d3d5e3ca4f6b922a0e5a9204c60c69528ad9bf841ca56871397",
+    "bytes": 43680
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_nativedebugger_arm64-v8a.so",
+    "sha256": "19fafab3eeea99db133a90c18e59acaff1faed02a9e9ae0c4d33c9fc8e1f372e",
+    "bytes": 56080
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_preview_arm64-v8a.so",
+    "sha256": "d1c7b67240e94433a7c1e7c7ce069d65c47eb75e66be19074e1af04efdaf997e",
+    "bytes": 207360
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_profiler_arm64-v8a.so",
+    "sha256": "7bf93bf28a195522c13d717fd6c7857b76b95698345126454e2d39c136a416ed",
+    "bytes": 155584
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_quickeventreplay_arm64-v8a.so",
+    "sha256": "e3df2782ce18eb7b915c1499db1a23a54566a8f69fd98a3ef3fe7e7f30cd8da4",
+    "bytes": 32192
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_quickprofiler_arm64-v8a.so",
+    "sha256": "9e342ef44deaa8f0028becd081eef885d71751032b37986310c5efc0f9d601b9",
+    "bytes": 31976
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_server_arm64-v8a.so",
+    "sha256": "f4a456350eab4e0d2752809d127867b882ea5705c109df6418126a224837575f",
+    "bytes": 103632
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_qmltooling_qmldbg_tcp_arm64-v8a.so",
+    "sha256": "abacdbd4a3ddb24af026963e0d0b43eec9881c9d2adfc5bc07b7357451604ebe",
+    "bytes": 19696
+  },
+  {
+    "path": "lib/arm64-v8a/libplugins_tls_qopensslbackend_arm64-v8a.so",
+    "sha256": "e167ab34702b957a0a3e44836816be10b348495d094c7054022f75815e7927f8",
+    "bytes": 297328
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtMultimedia_quickmultimediaplugin_arm64-v8a.so",
+    "sha256": "baf938ca7c3d56766a6885d413f2a443bfc29998593168492f093bebfb7ad976",
+    "bytes": 13288
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQml_Models_modelsplugin_arm64-v8a.so",
+    "sha256": "212eedc6712ab3cce1391658c7805fa552478a83f1faa00cc4af90d42b0bc3a5",
+    "bytes": 12128
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQml_WorkerScript_workerscriptplugin_arm64-v8a.so",
+    "sha256": "b1d61ccbd0db6f1ca26da0b637eef02ace925f7ad5c42da7dc6e01c29c709c46",
+    "bytes": 12192
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQml_qmlplugin_arm64-v8a.so",
+    "sha256": "c3bacb9228b39580cab57e766153da5d22e46c12ad6c12a7e330e63971c5066c",
+    "bytes": 12176
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_Basic_impl_qtquickcontrols2basicstyleimplplugin_arm64-v8a.so",
+    "sha256": "b6cd3aaaebbb76aedc0b130b7e7a2649307b4fdc407ffa2301ea915ac9a69a76",
+    "bytes": 12304
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_Basic_qtquickcontrols2basicstyleplugin_arm64-v8a.so",
+    "sha256": "862f591a63ff80d2c436d4ec00d09ab655a122cab9a12df084de837724fcb758",
+    "bytes": 13576
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_FluentWinUI3_impl_qtquickcontrols2fluentwinui3styleimplplugin_arm64-v8a.so",
+    "sha256": "357c4282ee1bc520c24a4c932f4961d2afea2a151fe807cc0166accd6c7e59cb",
+    "bytes": 12384
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_FluentWinUI3_qtquickcontrols2fluentwinui3styleplugin_arm64-v8a.so",
+    "sha256": "015180e9319542f17d975ac3c137b51bc66d2754160d85c459f2978a8e126a8e",
+    "bytes": 3343528
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_Fusion_impl_qtquickcontrols2fusionstyleimplplugin_arm64-v8a.so",
+    "sha256": "9d8ca238609bbc4493a914fe87347e8ea5b86dfe393a932711d23a242c93d6a3",
+    "bytes": 12336
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_Fusion_qtquickcontrols2fusionstyleplugin_arm64-v8a.so",
+    "sha256": "9cf355374a6e667235dbd6375daaa9aedf39c02102e634e6c9e45df8cb6d2303",
+    "bytes": 13472
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_Imagine_impl_qtquickcontrols2imaginestyleimplplugin_arm64-v8a.so",
+    "sha256": "9bf6f19e69ed2d17a152e454bf36ddac585de7d90ac27b030c5dff61eae67392",
+    "bytes": 12336
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_Imagine_qtquickcontrols2imaginestyleplugin_arm64-v8a.so",
+    "sha256": "3731dc15e083331bcb4937a143885e611e23c5640586967883e3e02f2d5ebcd4",
+    "bytes": 13488
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_Material_impl_qtquickcontrols2materialstyleimplplugin_arm64-v8a.so",
+    "sha256": "af22bf41859f0ba406daf727e54da7d379c8818b1435e5171d12016e014d59be",
+    "bytes": 12336
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_Material_qtquickcontrols2materialstyleplugin_arm64-v8a.so",
+    "sha256": "c859fd559d7960c8cbc8dccfd23498b4b048a691ab7529c5857e32559bbd28b5",
+    "bytes": 13776
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_Universal_impl_qtquickcontrols2universalstyleimplplugin_arm64-v8a.so",
+    "sha256": "e87fae08ca75cf29a33851e404bde2543b6142eddcc24d2ae7712b8a7c2900cd",
+    "bytes": 12352
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_Universal_qtquickcontrols2universalstyleplugin_arm64-v8a.so",
+    "sha256": "7d6c6c25d8b810e5624f476617d51cf24c9376bff952ba72e28e3b72fc68cdcc",
+    "bytes": 13792
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_impl_qtquickcontrols2implplugin_arm64-v8a.so",
+    "sha256": "10d65759b391ab6fde7eb1295dd448e4c5db30987341bd0bdc64655d161e84a6",
+    "bytes": 12400
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Controls_qtquickcontrols2plugin_arm64-v8a.so",
+    "sha256": "0cdd47e9d79b53e27c7b677a7ab8a4722639d01b94d3299466743040bbef0c72",
+    "bytes": 27112
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Dialogs_qtquickdialogsplugin_arm64-v8a.so",
+    "sha256": "e8af6efce87a9d34fb9d17f4a52e8af2632afe5523b4e7050bfc7a0f40a86926",
+    "bytes": 12352
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Dialogs_quickimpl_qtquickdialogs2quickimplplugin_arm64-v8a.so",
+    "sha256": "d6a3fa2cd35e65f2cf3e2ba687e41449bf6e1cf7e42bdf87bb82dccf345f06cf",
+    "bytes": 12448
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Effects_effectsplugin_arm64-v8a.so",
+    "sha256": "43ec664e8b40176b9eb6fdb0fd3ed895cdd0ef89e436ceee2b62fbf4d775ea1a",
+    "bytes": 12336
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Layouts_qquicklayoutsplugin_arm64-v8a.so",
+    "sha256": "be2f507a32b78989699654f85ee9eae101de548c2b2c825734737281daa0ebf3",
+    "bytes": 12176
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Shapes_qmlshapesplugin_arm64-v8a.so",
+    "sha256": "2f17d08394a34423b5b33b2dc7db414fa6fbaa52048407a2b6799a54d4c076a2",
+    "bytes": 12584
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Templates_qtquicktemplates2plugin_arm64-v8a.so",
+    "sha256": "3d6679d8cd809eb155fe0964928438b22d99875d18828b624c3ba72821a16b98",
+    "bytes": 13224
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_Window_quickwindowplugin_arm64-v8a.so",
+    "sha256": "48d8e784ca674c7eb84f0d84389ee014d32b191e7f31e402ac2a221bfd2539c7",
+    "bytes": 13704
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_QtQuick_qtquick2plugin_arm64-v8a.so",
+    "sha256": "9430011ec09e9fffb5bccb654f35ec53ffb93313f9ea422779e9d6ec4d071388",
+    "bytes": 12488
+  },
+  {
+    "path": "lib/arm64-v8a/libqml_Qt_labs_folderlistmodel_qmlfolderlistmodelplugin_arm64-v8a.so",
+    "sha256": "a721b313883a559a3f9a202721ea02d53df6969d00d5baaf83c2458ab8b114f0",
+    "bytes": 12224
+  },
+  {
+    "path": "lib/arm64-v8a/libswresample.so",
+    "sha256": "17daae16dfc280c47817bdba348c7d178f086d5ff4aa7d4e754befdd4cea51fc",
+    "bytes": 93256
+  },
+  {
+    "path": "lib/arm64-v8a/libswscale.so",
+    "sha256": "c6287c5ce998685fc0fc0e69f57ced4810e3bfe489d9c005a87cc70c44bd7539",
+    "bytes": 729888
+  }
+]

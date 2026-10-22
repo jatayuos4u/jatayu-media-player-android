@@ -1,0 +1,12 @@
+build/
+cmake-build-*/
+.gradle/
+*.apk
+*.aab
+*.keystore
+*.jks
+local.properties
+.idea/
+.DS_Store
+__pycache__/
+artifacts/

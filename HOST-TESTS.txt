@@ -1,0 +1,31 @@
+Test project /workspace/scratch/c951ced7546b/release-source/build/release-host
+      Start  1: media-store
+ 1/13 Test  #1: media-store ......................   Passed    0.06 sec
+      Start  2: media-identity
+ 2/13 Test  #2: media-identity ...................   Passed    0.02 sec
+      Start  3: ui-smoke
+ 3/13 Test  #3: ui-smoke .........................   Passed   19.71 sec
+      Start  4: audio-visualizer
+ 4/13 Test  #4: audio-visualizer .................   Passed    0.72 sec
+      Start  5: security-input
+ 5/13 Test  #5: security-input ...................   Passed    0.06 sec
+      Start  6: media-decoder-safety
+ 6/13 Test  #6: media-decoder-safety .............   Passed    0.23 sec
+      Start  7: sound-dsp
+ 7/13 Test  #7: sound-dsp ........................   Passed    0.42 sec
+      Start  8: sound-studio
+ 8/13 Test  #8: sound-studio .....................   Passed    2.22 sec
+      Start  9: media-source
+ 9/13 Test  #9: media-source .....................   Passed    0.13 sec
+      Start 10: playback-session
+10/13 Test #10: playback-session .................   Passed    0.18 sec
+      Start 11: playback-policy
+11/13 Test #11: playback-policy ..................   Passed    0.50 sec
+      Start 12: playback-decks
+12/13 Test #12: playback-decks ...................   Passed    0.03 sec
+      Start 13: interface-language
+13/13 Test #13: interface-language ...............   Passed    0.01 sec
+
+100% tests passed out of 13
+
+Total Test time (real) =  24.29 sec

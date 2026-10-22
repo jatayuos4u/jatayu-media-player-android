@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 256 256">
+<defs>
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#17283f"/><stop offset="1" stop-color="#06101f"/></linearGradient>
+<linearGradient id="wing" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#48f0f6"/><stop offset=".55" stop-color="#009bef"/><stop offset="1" stop-color="#1758d8"/></linearGradient>
+</defs>
+<rect x="5" y="5" width="246" height="246" rx="53" fill="url(#bg)" stroke="#298db9" stroke-width="4"/>
+<path d="M96 35 Q161 63 217 120 Q230 132 215 146 L96 218 Q76 230 76 202 L76 61 Q76 35 96 35Z" fill="#143558" stroke="#39bfe9" stroke-width="4"/>
+<path d="M28 64 Q85 115 158 140 Q123 154 80 140 Q44 120 28 64Z" fill="url(#wing)"/>
+<path d="M26 106 Q78 148 151 153 Q115 179 73 159 Q41 142 26 106Z" fill="url(#wing)"/>
+<path d="M36 151 Q80 177 140 167 Q106 198 73 186 Q53 176 36 151Z" fill="url(#wing)"/>
+<path d="M61 45 Q100 108 183 117 L200 126 Q188 146 165 149 Q143 131 109 117 Q82 95 61 45Z" fill="#45dff2"/>
+<path d="M147 109 Q178 95 210 113 Q194 112 187 126 Q177 146 154 151 Q166 136 147 109Z" fill="#2bbde5"/>
+<circle cx="184" cy="117" r="4" fill="#06101f"/>
+</svg>

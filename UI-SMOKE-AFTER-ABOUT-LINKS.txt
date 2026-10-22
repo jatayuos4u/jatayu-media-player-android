@@ -1,0 +1,7 @@
+Test project /workspace/scratch/c951ced7546b/release-source/build/release-host
+    Start 3: ui-smoke
+1/1 Test #3: ui-smoke .........................   Passed   19.67 sec
+
+100% tests passed out of 1
+
+Total Test time (real) =  19.67 sec
