@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.21)
-project(JatayuMediaPlayerAndroid VERSION 1.0.1 LANGUAGES CXX)
+project(JatayuMediaPlayerAndroid VERSION 1.0.2 LANGUAGES CXX)
 
 add_compile_definitions(JATAYU_APP_VERSION="${PROJECT_VERSION}")
 set(CMAKE_CXX_STANDARD 17)
@@ -45,7 +45,7 @@ if(ANDROID)
         QT_ANDROID_PACKAGE_SOURCE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/android/package"
         QT_ANDROID_PACKAGE_NAME "io.github.jatayuos4u.jatayumediaplayer"
         QT_ANDROID_VERSION_NAME "${PROJECT_VERSION}"
-        QT_ANDROID_VERSION_CODE 20
+        QT_ANDROID_VERSION_CODE 21
         QT_ANDROID_MIN_SDK_VERSION 28
         QT_ANDROID_TARGET_SDK_VERSION 36
     )
