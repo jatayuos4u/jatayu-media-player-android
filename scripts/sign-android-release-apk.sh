@@ -9,11 +9,11 @@ repo_dir="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
 : "${JATAYU_RELEASE_STORE_PASS:?Supply through environment, not command arguments}"
 : "${JATAYU_RELEASE_KEY_PASS:?Supply through environment, not command arguments}"
 : "${JATAYU_RELEASE_CERT_SHA256:?Set independently recorded production certificate SHA256}"
-input="$(realpath -- "${1:?Unsigned 1.0 release APK path}")"
-output="${2:?Output path ending in Jatayu-Media-Player-Android-1.0.apk}"
+input="$(realpath -- "${1:?Unsigned 1.0.2 release APK path}")"
+output="${2:?Output path ending in Jatayu-Media-Player-Android-1.0.2.apk}"
 [[ -f "$input" && -f "$JATAYU_RELEASE_KEYSTORE" ]] || { echo 'APK or keystore missing' >&2; exit 1; }
 [[ ! -e "$output" ]] || { echo 'Refusing to overwrite an existing release artifact' >&2; exit 1; }
-[[ "$(basename -- "$output")" == Jatayu-Media-Player-Android-1.0.apk ]] || { echo 'Unexpected release filename' >&2; exit 1; }
+[[ "$(basename -- "$output")" == Jatayu-Media-Player-Android-1.0.2.apk ]] || { echo 'Unexpected release filename' >&2; exit 1; }
 [[ "$JATAYU_RELEASE_ALIAS" != androiddebugkey ]] || { echo 'Development alias is not allowed' >&2; exit 1; }
 cert="${JATAYU_RELEASE_CERT_SHA256,,}"
 cert="${cert//:/}"
@@ -33,7 +33,7 @@ trap 'rm -rf -- "$stage"' EXIT
     --out "$stage/signed.apk" "$stage/aligned.apk"
 python3 "$repo_dir/scripts/validate-android-apk.py" "$stage/signed.apk" \
     --build-tools "$tools" --hardened --require-16k --require-release-notices \
-    --expected-version-name 1.0 --expected-version-code 19 --expected-signing-cert "$cert"
+    --expected-version-name 1.0.2 --expected-version-code 21 --expected-signing-cert "$cert"
 # Atomic no-clobber publication on the same filesystem, after validation.
 ln -- "$stage/signed.apk" "$output"
 sha256sum -- "$output"
