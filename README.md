@@ -9,6 +9,12 @@ Created by **Anup Kumar Yadav** · A **JatayuOS** project · Made in India.
 
 [Website](https://jatayuos.in/apps/media-player/android/) · [हिन्दी](https://jatayuos.in/hi/apps/media-player/android/) · [Releases](../../releases) · [Support](https://jatayuos.in/support/)
 
+## Android 1.0.2 source update
+
+The video-resume correction has been merged into `main` (version 1.0.2, code 21). The maintainer reports that the fix works on their Android phone. The **signed 1.0.2 APK has not yet been uploaded to GitHub Releases**; continue using the existing published 1.0 download until the new signed package and its checksum are verified.
+
+See [resume regression checklist](docs/ANDROID-VIDEO-RESUME-REGRESSION.md). Android 1.0.2 must use the original production signing certificate so existing users can update without uninstalling.
+
 ## Android 1.0
 
 Android 9+ (API 28), ARM64 phones and tablets. Target API 36. Install the signed
