@@ -21,7 +21,6 @@ jobs:
       ANDROID_SDK_ROOT: ${{ github.workspace }}/android-sdk
       QT_ANDROID_ROOT: ${{ github.workspace }}/Qt/6.11.3/android_arm64_v8a
       QT_HOST_PATH: ${{ github.workspace }}/Qt/6.11.3/gcc_64
-      JAVA_HOME: /opt/hostedtoolcache/Java_Temurin-Hotspot_jdk/21
       BUILD_JOBS: "2"
     steps:
       - uses: actions/checkout@v4
