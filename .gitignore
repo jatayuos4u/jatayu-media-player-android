@@ -10,3 +10,23 @@ local.properties
 .DS_Store
 __pycache__/
 artifacts/
+
+# Never commit credentials, signing materials, or local release state
+*.p12
+*.pfx
+*.pem
+*.key
+*.asc
+*.gpg
+*.kdbx
+*.env
+.env
+.env.*
+!.env.example
+*credentials*.json
+*service-account*.json
+*secrets*.properties
+*signing*.properties
+*keystore*.properties
+*.mobileprovision
+*.log
