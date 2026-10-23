@@ -105,6 +105,8 @@ ApplicationWindow {
     property string selectedPlaylistName: ""
     property int playlistRevision: 0
     property real pendingResume: 0
+    property real lastStablePosition: 0
+    property string lastStableSource: ""
     property real repeatA: -1
     property real repeatB: -1
     property bool repeatActive: false
@@ -238,8 +240,24 @@ ApplicationWindow {
                (seconds >= 3600 ? ("0" + Math.floor(seconds / 60) % 60).slice(-2) : Math.floor(seconds / 60)) + ":" + ("0" + seconds % 60).slice(-2)
     }
     function saveProgress() {
-        if (hasMedia && player.duration > 0)
-            window.store.updateProgress(player.source, player.position, player.duration)
+        if (!hasMedia || player.duration <= 0) return
+        const source = player.source.toString()
+        // Teardown may report position zero before the checkpoint is saved.
+        const position = player.position > 0 ? player.position
+            : (lastStableSource === source ? lastStablePosition : 0)
+        if (position > 0 || player.mediaStatus === MediaPlayer.EndOfMedia)
+            window.store.updateProgress(player.source,
+                player.mediaStatus === MediaPlayer.EndOfMedia ? player.duration : position,
+                player.duration)
+    }
+    function restorePendingPosition() {
+        if (pendingResume <= 0 || !player.seekable || player.duration <= 0) return
+        const resumeTo = Math.min(pendingResume, Math.max(0, player.duration - 1000))
+        if (resumeTo <= 0) { pendingResume = 0; return }
+        window.seekTo(resumeTo)
+        lastStableSource = player.source.toString()
+        lastStablePosition = resumeTo
+        pendingResume = 0
     }
     function refreshBookmarks() { marked = window.store.bookmarks(player.source) }
     function openMedia(item, entries) {
@@ -249,9 +267,13 @@ ApplicationWindow {
         player.stop()
         queue = entries && entries.length ? entries.slice() : [item]
         queueIndex = queue.findIndex(function(value) { return value.url === item.url })
-        current = item
+        const fresh = store.entry(item.url)
+        current = fresh.url ? fresh : item
         clearRepeat()
-        pendingResume = store.preferences.resume && item.position > 0 && item.position < item.duration - 2000 ? item.position : 0
+        pendingResume = store.preferences.resume && current.position > 0
+            && current.duration > current.position + 2000 ? current.position : 0
+        lastStableSource = ""
+        lastStablePosition = 0
         player.playbackRate = store.preferences.defaultSpeed
         if (!mediaSource.open(player, item.url)) { pendingResume = 0; notice = mediaSource.error; return }
         refreshBookmarks()
@@ -397,26 +419,29 @@ ApplicationWindow {
 
     Connections {
         target: window.player
-        function onSourceChanged() { window.clearRepeat(); window.externalCues = []; window.externalEnabled = false; window.externalSubtitleName = ""; window.subtitleDelay = 0 }
+        function onSourceChanged() {
+            window.clearRepeat()
+            window.lastStableSource = ""
+            window.lastStablePosition = 0
+            window.externalCues = []; window.externalEnabled = false
+            window.externalSubtitleName = ""; window.subtitleDelay = 0
+        }
         function onTracksChanged() {
             if (!window.store.preferences.subtitles || window.externalEnabled) player.activeSubtitleTrack = -1
         }
         function onErrorOccurred(error, errorString) { window.notice = errorString || qsTr("Unable to play. Try selecting the file again.") }
         function onPositionChanged(position) {
             window.handleRepeatBoundary(position)
-        }
-        function onDurationChanged() {
-            if (window.pendingResume > 0 && player.duration > window.pendingResume && player.seekable) {
-                window.seekTo(window.pendingResume); window.pendingResume = 0
+            if (position > 0 && player.duration > 0) {
+                window.lastStableSource = player.source.toString()
+                window.lastStablePosition = position
             }
         }
-        function onSeekableChanged(canSeek) {
-            if (player.seekable && window.pendingResume > 0 && player.duration > window.pendingResume) {
-                window.seekTo(window.pendingResume); window.pendingResume = 0
-            }
-        }
+        function onDurationChanged() { window.restorePendingPosition() }
+        function onSeekableChanged(canSeek) { window.restorePendingPosition() }
         function onPlaybackStateChanged() { if (player.playbackState !== MediaPlayer.PlayingState) window.saveProgress(); window.syncPlayerWindow() }
         function onMediaStatusChanged() {
+            window.restorePendingPosition()
             if (player.mediaStatus === MediaPlayer.EndOfMedia) {
                 window.saveProgress()
                 window.soundStudio.finish()
