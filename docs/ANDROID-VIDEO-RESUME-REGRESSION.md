@@ -1,6 +1,6 @@
 # Android video resume regression checks
 
-Related: #1. This branch is a proposed fix, **not a tested APK or released update**.
+Related: #1. Android 1.0.2 source fix. The maintainer reported that the video resume issue is resolved on their Android phone after installing 1.0.2. This does not establish a complete device-test matrix or a published release.
 
 1. In Settings > Playback, enable **Resume where I left off**.
 2. Open a locally stored 10-minute video. Pause at 02:15, navigate to the library, and reopen it. Playback should start near 02:15.
@@ -13,4 +13,4 @@ Related: #1. This branch is a proposed fix, **not a tested APK or released updat
 9. Verify pause/play and next/previous queue, music background playback, Picture-in-Picture and subtitle controls still behave correctly.
 10. Verify restored positions survive restarts without deleting user playlists, notes or library entries.
 
-Before distribution: compile Android ARM64 from this branch, run host and physical-device tests, increment Android versionCode above 19, sign with the existing production key (kept offline), validate resulting APK and SHA256, then publish as a new patch release. **Never overwrite Android 1.0 binary with an unverified build.**
+Before distribution: Android ARM64 local build succeeded per maintainer report; version 1.0.2 uses versionCode 21. Verify production signature and package integrity, record the signed APK SHA256, then publish as a separate patch release. The maintainer confirmed resume works on their phone; other cases above still require broader validation. **Never overwrite Android 1.0 binary with an unverified build.**
