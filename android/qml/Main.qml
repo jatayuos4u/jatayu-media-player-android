@@ -432,15 +432,13 @@ ApplicationWindow {
         function onErrorOccurred(error, errorString) { window.notice = errorString || qsTr("Unable to play. Try selecting the file again.") }
         function onPositionChanged(position) {
             window.handleRepeatBoundary(position)
+            if (position > 0 && player.duration > 0) {
+                window.lastStableSource = player.source.toString()
+                window.lastStablePosition = position
+            }
         }
         function onDurationChanged() { window.restorePendingPosition() }
         function onSeekableChanged(canSeek) { window.restorePendingPosition() }
-        function onPositionChanged() {
-            if (player.position > 0 && player.duration > 0) {
-                window.lastStableSource = player.source.toString()
-                window.lastStablePosition = player.position
-            }
-        }
         function onPlaybackStateChanged() { if (player.playbackState !== MediaPlayer.PlayingState) window.saveProgress(); window.syncPlayerWindow() }
         function onMediaStatusChanged() {
             window.restorePendingPosition()
