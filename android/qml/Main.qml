@@ -105,6 +105,7 @@ ApplicationWindow {
     property string selectedPlaylistName: ""
     property int playlistRevision: 0
     property real pendingResume: 0
+    property int resumeSeekAttempts: 0
     property real lastStablePosition: 0
     property string lastStableSource: ""
     property real repeatA: -1
@@ -240,7 +241,7 @@ ApplicationWindow {
                (seconds >= 3600 ? ("0" + Math.floor(seconds / 60) % 60).slice(-2) : Math.floor(seconds / 60)) + ":" + ("0" + seconds % 60).slice(-2)
     }
     function saveProgress() {
-        if (!hasMedia || player.duration <= 0) return
+        if (!hasMedia || player.duration <= 0 || pendingResume > 0) return
         const source = player.source.toString()
         // Teardown may report position zero before the checkpoint is saved.
         const position = player.position > 0 ? player.position
@@ -252,12 +253,23 @@ ApplicationWindow {
     }
     function restorePendingPosition() {
         if (pendingResume <= 0 || !player.seekable || player.duration <= 0) return
-        const resumeTo = Math.min(pendingResume, Math.max(0, player.duration - 1000))
-        if (resumeTo <= 0) { pendingResume = 0; return }
-        window.seekTo(resumeTo)
-        lastStableSource = player.source.toString()
-        lastStablePosition = resumeTo
-        pendingResume = 0
+        // Qt/Android can accept setPosition() before its decoder is ready but
+        // subsequently begin playback at zero. Keep retrying until confirmed.
+        const goal = Math.min(pendingResume, Math.max(0, player.duration - 1000))
+        if (goal <= 0) { pendingResume = 0; return }
+        if (Math.abs(player.position - goal) <= 3000) {
+            lastStableSource = player.source.toString()
+            lastStablePosition = player.position
+            pendingResume = 0
+            return
+        }
+        if (resumeSeekAttempts >= 25) {
+            notice = qsTr("Unable to restore the saved video position")
+            pendingResume = 0
+            return
+        }
+        resumeSeekAttempts++
+        window.seekTo(goal)
     }
     function refreshBookmarks() { marked = window.store.bookmarks(player.source) }
     function openMedia(item, entries) {
@@ -274,6 +286,7 @@ ApplicationWindow {
             && current.duration > current.position + 2000 ? current.position : 0
         lastStableSource = ""
         lastStablePosition = 0
+        resumeSeekAttempts = 0
         player.playbackRate = store.preferences.defaultSpeed
         if (!mediaSource.open(player, item.url)) { pendingResume = 0; notice = mediaSource.error; return }
         refreshBookmarks()
@@ -431,6 +444,14 @@ ApplicationWindow {
         }
         function onErrorOccurred(error, errorString) { window.notice = errorString || qsTr("Unable to play. Try selecting the file again.") }
         function onPositionChanged(position) {
+            if (window.pendingResume > 0) {
+                if (Math.abs(position - window.pendingResume) <= 3000) {
+                    window.lastStableSource = player.source.toString()
+                    window.lastStablePosition = position
+                    window.pendingResume = 0
+                }
+                return
+            }
             window.handleRepeatBoundary(position)
             if (position > 0 && player.duration > 0) {
                 window.lastStableSource = player.source.toString()
@@ -439,7 +460,11 @@ ApplicationWindow {
         }
         function onDurationChanged() { window.restorePendingPosition() }
         function onSeekableChanged(canSeek) { window.restorePendingPosition() }
-        function onPlaybackStateChanged() { if (player.playbackState !== MediaPlayer.PlayingState) window.saveProgress(); window.syncPlayerWindow() }
+        function onPlaybackStateChanged() {
+            if (player.playbackState !== MediaPlayer.PlayingState) window.saveProgress()
+            else window.restorePendingPosition()
+            window.syncPlayerWindow()
+        }
         function onMediaStatusChanged() {
             window.restorePendingPosition()
             if (player.mediaStatus === MediaPlayer.EndOfMedia) {
@@ -460,6 +485,7 @@ ApplicationWindow {
     }
     Binding { target: window.soundStudio; property: "music"; value: window.current.kind === "audio" }
     Connections { target: window.soundStudio; function onPlaybackFinished() { window.finishPlayback() } }
+    Timer { interval: 400; running: window.pendingResume > 0; repeat: true; onTriggered: window.restorePendingPosition() }
     Timer { interval: 10000; running: window.playing; repeat: true; onTriggered: window.saveProgress() }
     Timer {
         interval: 60000; running: window.sleepMinutes > 0; repeat: true
